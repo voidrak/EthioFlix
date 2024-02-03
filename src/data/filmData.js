@@ -250,6 +250,16 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=0_etS3Xevf0",
     id: nanoid(),
   },
+  {
+    amharicTitle: "ፈተሽ አግቢኝ",
+    EnglishTitle: "Fetesh Agbign",
+    releaseYear: 2018,
+    rating: 6.9,
+    duration: "1h 31m",
+    genre: ["Romance"],
+    src: "https://www.youtube.com/watch?v=UVW5EWs8uyk",
+    id: nanoid(),
+  },
 ];
 
 export default filmData;
