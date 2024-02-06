@@ -6,7 +6,7 @@ import filmData from "./data/filmData";
 import { SharedLayout } from "./components/SharedLayout";
 import { HomePage } from "./pages/HomePage";
 import MoviePage from "./pages/MoviePage";
-import WatchMovie from "./pages/WatchMovie";
+import WatchMoviePage from "./pages/WatchMoviePage";
 import { ErrorPage } from "./pages/ErrorPage";
 const App = () => {
   const [sideBar, setSideBar] = useState(false);
@@ -27,7 +27,7 @@ const App = () => {
             }
           />
           <Route path="home" element={<MoviePage />} />
-          <Route path="home/:movieId" element={<WatchMovie />} />
+          <Route path="home/:movieId" element={<WatchMoviePage />} />
         </Route>
         <Route path="*" element={<ErrorPage />} />
       </Routes>

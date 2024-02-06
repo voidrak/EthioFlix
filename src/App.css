@@ -223,6 +223,18 @@ body {
   aspect-ratio: 1/1;
   fill: var(--BLACK-COLOR);
 }
+.movie {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 200px;
+}
 
 /* ------------------------MEDIA QUERY---------------------------------------- */
 
