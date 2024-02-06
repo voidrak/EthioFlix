@@ -167,7 +167,7 @@ const filmData = [
     id: nanoid(),
   },
   {
-    amharicTitle: "ጥለፈኝ ሙሉ",
+    amharicTitle: "ጥለፈኝ",
     EnglishTitle: "Tilefegn",
     releaseYear: 2016,
     rating: 6.8,
@@ -559,7 +559,7 @@ const filmData = [
     rating: 7.0,
     duration: "1h 51m",
     genre: ["Drama", "Crime", "Thriller"],
-    src: "https://www.youtube.com/watch?v=ePk_kPGB7Ew",
+    src: "https://www.youtube.co/m/watch?v=ePk_kPGB7Ew",
     image: "src/assets/images/movie thumbnails/Gizat.jpeg",
     id: nanoid(),
   },
