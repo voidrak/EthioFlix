@@ -25,11 +25,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 70px;
 }
 .header .header-menu {
-  width: 22px;
+  width: 30px;
   fill: var(--PRIMARY-COLOR);
-  margin-bottom: 8px;
 }
 .header img {
   width: 70px;
@@ -39,9 +39,9 @@ body {
   display: none;
 }
 
-.header .larger-screen-header input {
+.header .header-search {
+  display: none;
   width: 30vw;
-  max-width: 360px;
   padding: 9px 10px;
   border: 2px solid var(--PRIMARY-COLOR);
   border-radius: 25px;
@@ -53,12 +53,101 @@ body {
   list-style-type: none;
   column-gap: 1.5rem;
 }
-.header .larger-screen-header ul li {
+.header .larger-screen-header ul li .link {
+  color: white;
+  text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;
 }
+.header .larger-screen-header ul li .active {
+  color: var(--PRIMARY-COLOR);
+  text-decoration: none;
+}
 .header .larger-screen-header ul li:hover {
   color: var(--PRIMARY-COLOR);
+}
+
+.home-page .active {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--BLACK-COLOR);
+  width: 70%;
+  height: 99svh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.home-page .remove {
+  display: none;
+}
+.home-page aside .svg-search {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.home-page aside .svg-search svg {
+  width: 30px;
+  aspect-ratio: 1/1;
+  fill: var(--PRIMARY-COLOR);
+  margin-left: 10px;
+}
+.home-page aside .svg-search input {
+  width: 180px;
+  padding: 0 10px;
+  border: 2px solid var(--PRIMARY-COLOR);
+  border-radius: 25px;
+  outline: none;
+  margin-right: 10px;
+}
+.home-page aside .side-navbar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+  margin-top: 2rem;
+}
+.home-page aside .side-navbar ul li {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page aside .side-navbar button {
+  background-color: var(--BG-COLOR);
+  border: none;
+  outline: none;
+  color: var(--WHITE-ACCENT);
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 60vw;
+  max-width: 335px;
+  border-radius: 24px;
+  padding: 10px 3px;
+  column-gap: 2rem;
+  font-size: 1rem;
+}
+.home-page aside .side-navbar button svg {
+  width: 34px;
+  aspect-ratio: 1/1;
+  fill: var(--PRIMARY-COLOR);
+  margin-left: 2rem;
+}
+.social-side {
+}
+.social-side ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  margin-top: 3rem;
+}
+.social-side ul li {
+  display: flex;
+  text-decoration: none;
+}
+.social-side ul li svg {
+  width: 30px;
+  fill: var(--PRIMARY-COLOR);
 }
 
 /* ------------------------MEDIA QUERY---------------------------------------- */
@@ -68,25 +157,34 @@ body {
     padding: 0 7vw;
   }
   .header .header-menu {
-    width: 29px;
+    width: 35px;
   }
   .header img {
-    width: 90px;
+    width: 70px;
     height: auto;
   }
 }
 
 @media screen and (min-width: 766px) {
   .header {
-    justify-content: space-around;
+    justify-content: space-evenly;
     column-gap: 4rem;
+    height: 100px;
   }
-  .header .header-menu {
+  .header .header-menu,
+  .home-page aside,
+  .home-page .active {
     display: none;
   }
+
   .header img {
-    width: 100px;
+    width: 80px;
     height: auto;
+  }
+  .header .header-search {
+    display: block;
+    width: 25vw;
+    padding: 7px 10px;
   }
   .header .larger-screen-header {
     display: flex;
@@ -98,14 +196,36 @@ body {
 
 @media screen and (min-width: 1025px) {
   .header img {
-    /* background-color: #9be4af; */
-    width: 130px;
+    width: 90px;
   }
-  .header .larger-screen-header input {
+  .header .header-search {
+    display: block;
     width: 30vw;
     padding: 9px 10px;
     border: 2px solid var(--PRIMARY-COLOR);
     border-radius: 25px;
     text-align: left;
+  }
+  .header .larger-screen-header ul li .link {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 120px;
+  }
+  .header .header-search {
+    padding: 10px 10px;
+    max-width: 360px;
+    font-size: 1rem;
+  }
+
+  .header .larger-screen-header ul {
+    column-gap: 3rem;
+  }
+
+  .header .larger-screen-header ul li .link {
+    font-size: 1.6rem;
   }
 }

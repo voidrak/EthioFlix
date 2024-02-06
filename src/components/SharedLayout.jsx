@@ -2,10 +2,10 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 
-export const SharedLayout = () => {
+export const SharedLayout = ({ handleSideBar }) => {
   return (
     <div>
-      <Header />
+      <Header handleSideBar={handleSideBar} />
       <Outlet />
     </div>
   );
