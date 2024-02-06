@@ -18,22 +18,12 @@ const App = () => {
       <Routes>
         <Route
           path="/"
-          element={
-            <SharedLayout
-              handleSideBar={handleSideBar}
-              sideBar={sideBar}
-              setSideBar={setSideBar}
-            />
-          }
+          element={<SharedLayout handleSideBar={handleSideBar} />}
         >
           <Route
             index
             element={
-              <HomePage
-                handleSideBar={handleSideBar}
-                sideBar={sideBar}
-                setSideBar={setSideBar}
-              />
+              <HomePage handleSideBar={handleSideBar} sideBar={sideBar} />
             }
           />
           <Route path="home" element={<MoviePage />} />
