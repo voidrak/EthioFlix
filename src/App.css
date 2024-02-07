@@ -67,7 +67,7 @@ body {
   color: var(--PRIMARY-COLOR);
 }
 
-.home-page .active {
+.active-aside {
   display: flex;
   flex-direction: column;
   background-color: var(--BLACK-COLOR);
@@ -76,22 +76,23 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 999;
 }
-.home-page .remove {
+.remove-aside {
   display: none;
 }
-.home-page aside .svg-search {
+.shared-layout aside .svg-search {
   margin-top: 1.5rem;
   display: flex;
   justify-content: space-around;
 }
-.home-page aside .svg-search svg {
+.shared-layout aside .svg-search svg {
   width: 30px;
   aspect-ratio: 1/1;
   fill: var(--PRIMARY-COLOR);
   margin-left: 10px;
 }
-.home-page aside .svg-search input {
+.shared-layout aside .svg-search input {
   width: 180px;
   padding: 0 10px;
   border: 2px solid var(--PRIMARY-COLOR);
@@ -99,20 +100,20 @@ body {
   outline: none;
   margin-right: 10px;
 }
-.home-page aside .side-navbar ul {
+.shared-layout aside .side-navbar ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 25px;
   margin-top: 2rem;
 }
-.home-page aside .side-navbar ul li {
+.shared-layout aside .side-navbar ul li {
   text-decoration: none;
   display: flex;
   flex-direction: column;
 }
 
-.home-page aside .side-navbar button {
+.shared-layout aside .side-navbar button {
   background-color: var(--BG-COLOR);
   border: none;
   outline: none;
@@ -127,14 +128,13 @@ body {
   column-gap: 2rem;
   font-size: 1rem;
 }
-.home-page aside .side-navbar button svg {
+.shared-layout aside .side-navbar button svg {
   width: 34px;
   aspect-ratio: 1/1;
   fill: var(--PRIMARY-COLOR);
   margin-left: 2rem;
 }
-.social-side {
-}
+
 .social-side ul {
   display: flex;
   justify-content: space-evenly;
@@ -223,17 +223,73 @@ body {
   aspect-ratio: 1/1;
   fill: var(--BLACK-COLOR);
 }
-.movie {
-  display: flex;
-  justify-content: center;
-  background-color: red;
-}
-.card {
+.top-movie-page {
   display: flex;
   flex-direction: column;
 }
-.card img {
-  width: 200px;
+.top-movie-card {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  background-image: url("src/assets/images/thumbnails/Wedaj.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 100vw;
+}
+/* -----------THE WHOLE CONTAINER----------------- */
+.carousel-container,
+.react-multi-carousel-list {
+  width: 100%;
+}
+
+/* --------------SINGLE ITEMS------------- */
+.react-multi-carousel-item,
+.carousel-item {
+}
+
+.carousel-button-group button {
+  background: transparent;
+  border: none;
+  outline: 1px solid red;
+  /* padding: 1rem; */
+}
+.carousel-button-group svg {
+  width: 50px;
+  aspect-ratio: 1/1;
+  fill: var(--PRIMARY-COLOR);
+  margin-left: 10px;
+}
+.top-movie-card img {
+  width: 700px;
+  /* aspect-ratio: 1/1; */
+}
+.carousel-item {
+  display: flex;
+  justify-content: center;
+}
+.dot-list {
+  margin-top: 4rem;
+}
+.react-multiple-carousel__arrow--right,
+.react-multiple-carousel__arrow--left {
+  display: none;
+}
+
+.nextArrow {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+}
+.preArrow {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.left-section {
+  /* width: 90vh; */
+  background-color: aqua;
+  height: 400px;
 }
 
 /* ------------------------MEDIA QUERY---------------------------------------- */
@@ -265,8 +321,8 @@ body {
     height: 100px;
   }
   .header .header-menu,
-  .home-page aside,
-  .home-page .active {
+  aside,
+  .active-aside {
     display: none;
   }
 

@@ -10,6 +10,7 @@ const filmData = [
     genre: ["Comedy", "Romance"],
     src: "https://youtu.be/EFxMJLQ6d6E?si=GQ0udCE1tHxRA5FP",
     image: "src/assets/images/thumbnails/Yewendoch Guday 2.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -21,6 +22,7 @@ const filmData = [
     genre: ["Comedy", "Romance"],
     src: "https://youtu.be/3XxVNJ8szfw?si=hfVD6b7szHh4GkZd",
     image: "src/assets/images/thumbnails/Yewendoch Guday.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -32,6 +34,7 @@ const filmData = [
     genre: ["Crime", "Thriller"],
     src: "https://youtu.be/kcKHRSEp2Wg?si=aeVN9XiIvkyH4xrn",
     image: "src/assets/images/thumbnails/Difret.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -43,6 +46,7 @@ const filmData = [
     genre: ["Comedy"],
     src: "https://www.youtube.com/watch?v=B4N4bmSntfA&t=48s",
     image: "src/assets/images/thumbnails/Made in China.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -54,6 +58,7 @@ const filmData = [
     genre: ["Drama", "Thriller"],
     src: "",
     image: "src/assets/images/thumbnails/Beches Tedebke.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -65,6 +70,7 @@ const filmData = [
     genre: ["Comedy"],
     src: "https://www.youtube.com/watch?v=-kittse6FQU&t=37s",
     image: "src/assets/images/thumbnails/Ye Addis Ababa Habtam.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -76,6 +82,7 @@ const filmData = [
     genre: ["Comedy", "Romance"],
     src: "https://youtu.be/zjsNw7a99vE?si=lGjR4IQdb3fhrtes",
     image: "src/assets/images/thumbnails/Sumalew Vandam.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -87,6 +94,7 @@ const filmData = [
     genre: ["Action", "Crime", "Adventure"],
     src: "https://www.youtube.com/watch?v=RfXkCXMv2qw",
     image: "src/assets/images/thumbnails/Ensaro.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -98,6 +106,7 @@ const filmData = [
     genre: ["Action", "Adventure", "Romance"],
     src: "https://www.youtube.com/watch?v=cfWx5O2wNqI",
     image: "src/assets/images/thumbnails/Alsetem.jpg",
+    isSlider: true,
     id: nanoid(),
   },
   {
@@ -109,6 +118,7 @@ const filmData = [
     genre: ["Action", "Crime"],
     src: "https://www.youtube.com/watch?v=_cOiDipHLes#fromHistory",
     image: "src/assets/images/thumbnails/ADEAL.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -120,6 +130,7 @@ const filmData = [
     genre: ["Romance"],
     src: "https://www.youtube.com/watch?v=-BgFT2qz4Ng#fromHistory",
     image: "src/assets/images/thumbnails/Amalayu.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -131,6 +142,7 @@ const filmData = [
     genre: ["Drama", "Comedy"],
     src: "https://www.youtube.com/watch?v=zYp-euzxdA8",
     image: "src/assets/images/thumbnails/Dynamite.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -142,6 +154,7 @@ const filmData = [
     genre: ["Comedy"],
     src: "https://www.youtube.com/watch?v=SpLt_HipVew",
     image: "src/assets/images/thumbnails/Chombe.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -153,6 +166,7 @@ const filmData = [
     genre: ["Drama", "Comedy"],
     src: "https://www.youtube.com/watch?v=u4n1bBSWPHY",
     image: "src/assets/images/thumbnails/Wayne Yarada Lij 5.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -164,6 +178,7 @@ const filmData = [
     genre: ["Drama"],
     src: "https://www.youtube.com/watch?v=u4n1bBSWPHY",
     image: "src/assets/images/thumbnails/Yefiker Sew.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -175,6 +190,7 @@ const filmData = [
     genre: ["Romance", "Comedy"],
     src: "https://youtu.be/fvJPyz1qb_Q?si=0CBEQi3hmibOMRO5",
     image: "src/assets/images/thumbnails/Tilefegn.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -186,6 +202,7 @@ const filmData = [
     genre: ["Psychology", "Thriller", "Drama"],
     src: "https://www.youtube.com/watch?v=BD1cn44fMIM",
     image: "src/assets/images/thumbnails/Difret.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -197,6 +214,7 @@ const filmData = [
     genre: ["Romance", "Comedy"],
     src: "https://www.youtube.com/watch?v=BD1cn44fMIM",
     image: "src/assets/images/thumbnails/Rebuni.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -208,6 +226,7 @@ const filmData = [
     genre: ["Drama", "Mystery"],
     src: "https://www.youtube.com/watch?v=o_XEr6NmecI",
     image: "src/assets/images/thumbnails/Yetefaw Lij.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -219,6 +238,7 @@ const filmData = [
     genre: ["Drama", "Comedy"],
     src: "https://www.youtube.com/watch?v=vbbwxtUKP5Y",
     image: "src/assets/images/thumbnails/Wefe Komech.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -230,6 +250,7 @@ const filmData = [
     genre: ["Adventure", "Comedy"],
     src: "https://www.youtube.com/watch?v=P76rjN7otlM",
     image: "src/assets/images/thumbnails/Jegnochu.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -241,6 +262,7 @@ const filmData = [
     genre: ["Drama"],
     src: "https://www.youtube.com/watch?v=19jBWv6-iFo",
     image: "src/assets/images/thumbnails/Eweneta.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -252,6 +274,7 @@ const filmData = [
     genre: ["Drama, Comedy"],
     src: "https://www.youtube.com/watch?v=GK_9kGUNKEE",
     image: "src/assets/images/thumbnails/Fidelawit.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -263,6 +286,7 @@ const filmData = [
     genre: ["Mystery, Romance"],
     src: "https://www.youtube.com/watch?v=dRvD8_-vvbg",
     image: "src/assets/images/thumbnails/Yenes Adam.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -274,6 +298,7 @@ const filmData = [
     genre: ["Comedy, Romance"],
     src: "https://www.youtube.com/watch?v=3ufo3k3Lvl0",
     image: "src/assets/images/thumbnails/Bandaf.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -285,6 +310,7 @@ const filmData = [
     genre: ["Comedy, Adventure"],
     src: "https://www.youtube.com/watch?v=xJW83XMrX8A",
     image: "src/assets/images/thumbnails/Zemene.jpg",
+    isSlider: false,
     id: nanoid(),
   },
 
@@ -297,6 +323,7 @@ const filmData = [
     genre: ["Drama, Romance"],
     src: "https://www.youtube.com/watch?v=0_etS3Xevf0",
     image: "src/assets/images/thumbnails/Absalat.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -308,6 +335,7 @@ const filmData = [
     genre: ["Romance"],
     src: "https://www.youtube.com/watch?v=UVW5EWs8uyk",
     image: "src/assets/images/thumbnails/Fetesh Agbign.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -319,6 +347,7 @@ const filmData = [
     genre: ["Comedy", "Romance"],
     src: "https://www.youtube.com/watch?v=OzuEechzsgE&t=3587s",
     image: "src/assets/images/thumbnails/Dingelu.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -330,6 +359,7 @@ const filmData = [
     genre: ["Comedy", "Drama"],
     src: "https://www.youtube.com/watch?v=piQpWsH4Th0",
     image: "src/assets/images/thumbnails/Misten Darkuat.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -341,6 +371,7 @@ const filmData = [
     genre: ["Comedy"],
     src: "https://www.youtube.com/watch?v=yH5P6eYEPUw",
     image: "src/assets/images/thumbnails/Astaraki 2.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -352,6 +383,7 @@ const filmData = [
     genre: ["Drama", "Thriller"],
     src: "https://www.youtube.com/watch?v=PwdDP0M8l0A&t=4s",
     image: "src/assets/images/thumbnails/Yekebre Deha.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -363,6 +395,7 @@ const filmData = [
     genre: ["Drama", "Comedy"],
     src: "https://www.youtube.com/watch?v=sXoAjDlaPkI",
     image: "src/assets/images/thumbnails/Emiye Chisu.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -374,6 +407,7 @@ const filmData = [
     genre: ["Comedy"],
     src: "https://www.youtube.com/watch?v=ze-sdI5JxT4",
     image: "src/assets/images/thumbnails/Trf Anchenem.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -385,6 +419,7 @@ const filmData = [
     genre: ["Drama", "Musical", "Thriller"],
     src: "https://www.youtube.com/watch?v=jmLi-nU2jmI&t=11s",
     image: "src/assets/images/thumbnails/Kiya.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -396,6 +431,7 @@ const filmData = [
     genre: ["Romance"],
     src: "https://www.youtube.com/watch?v=0mz4zQk2kHA",
     image: "src/assets/images/thumbnails/Twedegnalech.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -407,6 +443,7 @@ const filmData = [
     genre: ["Drama", "Thriller"],
     src: "https://www.youtube.com/watch?v=718Y6KtToxk",
     image: "src/assets/images/thumbnails/Zewd Ena Gofer 2.jpg",
+    isSlider: true,
     id: nanoid(),
   },
   {
@@ -418,6 +455,7 @@ const filmData = [
     genre: ["Comedy"],
     src: "https://www.youtube.com/watch?v=7Fa5cCk2ePM",
     image: "src/assets/images/thumbnails/Endateresaw.jpeg",
+    isSlider: true,
     id: nanoid(),
   },
   {
@@ -429,6 +467,7 @@ const filmData = [
     genre: ["Comedy", "Crime", "Action"],
     src: "https://www.youtube.com/watch?v=i6Mog5v4f5o",
     image: "src/assets/images/thumbnails/Yearbegnaw Lij.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -440,6 +479,7 @@ const filmData = [
     genre: ["Comedy", "Romance"],
     src: "https://www.youtube.com/watch?v=i6Mog5v4f5o",
     image: "src/assets/images/thumbnails/Hiwot Ena Sak.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -451,6 +491,7 @@ const filmData = [
     genre: ["Drama"],
     src: "https://www.youtube.com/watch?v=1UWWT56l_AQ",
     image: "src/assets/images/thumbnails/SALAFEKRAT.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -462,6 +503,7 @@ const filmData = [
     genre: ["Drama", "Thriller"],
     src: "https://www.youtube.com/watch?v=sPUIq1qccGo",
     image: "src/assets/images/thumbnails/Bole Manekiya.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -473,6 +515,7 @@ const filmData = [
     genre: ["Drama", "Thriller"],
     src: "https://www.youtube.com/watch?v=Z_YEmVhzbNA",
     image: "src/assets/images/thumbnails/Be17 Merf.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -484,6 +527,7 @@ const filmData = [
     genre: ["Crime", "Thriller", "Action"],
     src: "https://www.youtube.com/watch?v=v-TQqx2UlQU",
     image: "src/assets/images/thumbnails/Inspecteru.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -495,6 +539,7 @@ const filmData = [
     genre: ["Romance"],
     src: "https://www.youtube.com/watch?v=hibr2E5sVkA",
     image: "src/assets/images/thumbnails/Yiwatalen.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -506,6 +551,7 @@ const filmData = [
     genre: ["Drama", "Thriller"],
     src: "https://www.youtube.com/watch?v=d1V6U0FCJgE&list=PL0emj0QQvrEEeN_b7mErJ46i6ew_3dK-V&index=282",
     image: "src/assets/images/thumbnails/yekerb eruk.jpeg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -517,6 +563,7 @@ const filmData = [
     genre: ["Crime", "Thriller"],
     src: "https://www.youtube.com/watch?v=rARyAYsyLxE",
     image: "src/assets/images/thumbnails/DIRDER.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -528,6 +575,7 @@ const filmData = [
     genre: ["Romance"],
     src: "https://www.youtube.com/watch?v=rARyAYsyLxE",
     image: "src/assets/images/thumbnails/Set Aygebam.jpg",
+    isSlider: true,
     id: nanoid(),
   },
   {
@@ -539,6 +587,7 @@ const filmData = [
     genre: ["Comedy"],
     src: "https://www.youtube.com/watch?v=zWWKjRhdPEI",
     image: "src/assets/images/thumbnails/300ሺ.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -550,6 +599,7 @@ const filmData = [
     genre: ["Drama", "Romance", "Thriller"],
     src: "https://www.youtube.com/watch?v=xG40wEeVuo4",
     image: "src/assets/images/thumbnails/And Tarik.jpg",
+    isSlider: true,
     id: nanoid(),
   },
   {
@@ -561,6 +611,7 @@ const filmData = [
     genre: ["Drama", "Crime", "Thriller"],
     src: "https://www.youtube.co/m/watch?v=ePk_kPGB7Ew",
     image: "src/assets/images/thumbnails/Gizat.jpeg",
+    isSlider: true,
     id: nanoid(),
   },
   {
@@ -572,6 +623,7 @@ const filmData = [
     genre: ["Drama", "Crime", "Thriller"],
     src: "https://www.youtube.com/watch?v=bEWk7i1klT4",
     image: "src/assets/images/thumbnails/Tenekakan.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -583,6 +635,7 @@ const filmData = [
     genre: ["Drama"],
     src: "https://www.youtube.com/watch?v=TvDq_CUmQMQ",
     image: "src/assets/images/thumbnails/Yefikir Tig.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -594,6 +647,7 @@ const filmData = [
     genre: ["Drama"],
     src: "https://www.youtube.com/watch?v=o-bbzw0oURA",
     image: "src/assets/images/thumbnails/Yesene Girgir.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -605,6 +659,7 @@ const filmData = [
     genre: ["Drama"],
     src: "https://www.youtube.com/watch?v=H8VYeAHTXIw&list=PL0emj0QQvrEEeN_b7mErJ46i6ew_3dK-V&index=138",
     image: "src/assets/images/thumbnails/Lalayish.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -616,6 +671,7 @@ const filmData = [
     genre: ["Crime", "Comedy", "Drama"],
     src: "https://www.youtube.com/watch?v=lnGYp08KPv8",
     image: "src/assets/images/thumbnails/Atse Mandela.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -627,17 +683,19 @@ const filmData = [
     genre: ["Drama"],
     src: "https://www.youtube.com/watch?v=nSiw7fUebhk",
     image: "src/assets/images/thumbnails/36 Kenatoch.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
     amharicTitle: "ማን ያዘዋል",
     EnglishTitle: "Manyazewal",
     releaseYear: 2023,
-    rating: 7.0,
+    rating: 7.9,
     duration: "1h 54m",
     genre: ["Drama", "Crime"],
     src: "https://www.youtube.com/watch?v=AEqC9Q3tNrk",
     image: "src/assets/images/thumbnails/Manyazewal.jpg",
+    isSlider: true,
     id: nanoid(),
   },
   {
@@ -649,6 +707,7 @@ const filmData = [
     genre: ["Drama", "Romance"],
     src: "https://www.youtube.com/watch?v=nNvR8_yn_ik",
     image: "src/assets/images/thumbnails/Hulet Aynet.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -660,6 +719,7 @@ const filmData = [
     genre: ["Comedy"],
     src: "https://www.youtube.com/watch?v=BixVWMvi41g",
     image: "src/assets/images/thumbnails/Sak Tera.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -671,6 +731,7 @@ const filmData = [
     genre: ["Comedy"],
     src: "https://www.youtube.com/watch?v=Y8oCTIAnP-8",
     image: "src/assets/images/thumbnails/Manesh.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -682,17 +743,19 @@ const filmData = [
     genre: ["Drama"],
     src: "https://www.youtube.com/watch?v=PqPDlsaNr-A",
     image: "src/assets/images/thumbnails/Aderegshegn Kena.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
     amharicTitle: "ወዳጅ",
     EnglishTitle: "Wedaj ",
     releaseYear: 2023,
-    rating: 7.5,
+    rating: 9.5,
     duration: "1h 42m",
     genre: ["Drama"],
     src: "https://www.youtube.com/watch?v=phmIAGUlKVg",
     image: "src/assets/images/thumbnails/Wedaj2.jpg",
+    isSlider: true,
     id: nanoid(),
   },
 
@@ -705,6 +768,7 @@ const filmData = [
     genre: ["Drama"],
     src: "https://www.youtube.com/watch?v=2-Hp8SPih9w",
     image: "src/assets/images/thumbnails/YeLij Astaraki.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -716,6 +780,7 @@ const filmData = [
     genre: ["Romace"],
     src: "https://www.youtube.com/watch?v=G_ClmIolrXo",
     image: "src/assets/images/thumbnails/Set Amelu.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -727,6 +792,7 @@ const filmData = [
     genre: ["Drama"],
     src: "https://www.youtube.com/watch?v=7uyvTelNPtI",
     image: "src/assets/images/thumbnails/Enifata.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -738,6 +804,7 @@ const filmData = [
     genre: ["Comedy"],
     src: "https://www.youtube.com/watch?v=c_SKiriTmRo",
     image: "src/assets/images/thumbnails/Yegodana Lij.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -749,6 +816,7 @@ const filmData = [
     genre: ["Comedy"],
     src: "https://www.youtube.com/watch?v=qC_yL8wkIFU",
     image: "src/assets/images/thumbnails/Madam Qeberign.jpg",
+    isSlider: false,
     id: nanoid(),
   },
 
@@ -761,6 +829,7 @@ const filmData = [
     genre: ["Thriller", "Comedy"],
     src: "https://www.youtube.com/watch?v=1_zzuoGW0hw",
     image: "src/assets/images/thumbnails/Tanashu Mafiya.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -772,6 +841,7 @@ const filmData = [
     genre: ["Drama"],
     src: "https://www.youtube.com/watch?v=SvNYVWxdmjs",
     image: "src/assets/images/thumbnails/wist awaki.jpg",
+    isSlider: false,
     id: nanoid(),
   },
 
@@ -784,6 +854,7 @@ const filmData = [
     genre: ["Documentry"],
     src: "https://www.youtube.com/watch?v=SvNYVWxdmjs",
     image: "src/assets/images/thumbnails/Lamb.jpg",
+    isSlider: false,
     id: nanoid(),
   },
   {
@@ -795,6 +866,7 @@ const filmData = [
     genre: ["Drama", "Thriller"],
     src: "https://www.youtube.com/watch?v=bTJMOyuTVLY",
     image: "src/assets/images/thumbnails/Lamba.jpg",
+    isSlider: false,
     id: nanoid(),
   },
 ];

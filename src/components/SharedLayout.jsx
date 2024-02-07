@@ -1,11 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
-
-export const SharedLayout = ({ handleSideBar }) => {
+import SideNav from "./SideNav";
+export const SharedLayout = ({ handleSideBar, sideBar }) => {
   return (
-    <div>
+    <div className="shared-layout">
       <Header handleSideBar={handleSideBar} />
+      <SideNav handleSideBar={handleSideBar} sideBar={sideBar} />
       <Outlet />
     </div>
   );

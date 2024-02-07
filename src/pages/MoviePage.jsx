@@ -1,76 +1,9 @@
 import React from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import filmData from "../data/filmData";
-const MoviePage = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+import TopMoviePage from "../components/TopMoivePage/TopMoviePage";
+const MoviePage = ({ allFilm }) => {
   return (
-    <div>
-      <Carousel responsive={responsive}>
-        <div className="card">
-          <img src={filmData[1].image} />
-          <h2>{filmData[1].amharicTitle}</h2>
-          <h3>{filmData[1].rating}</h3>
-        </div>
-        <div className="card">
-          <img src={filmData[1].image} />
-          <h2>{filmData[1].amharicTitle}</h2>
-          <h3>{filmData[1].rating}</h3>
-        </div>
-        <div className="card">
-          <img src={filmData[1].image} />
-          <h2>{filmData[1].amharicTitle}</h2>
-          <h3>{filmData[1].rating}</h3>
-        </div>
-        <div className="card">
-          <img src={filmData[1].image} />
-          <h2>{filmData[1].amharicTitle}</h2>
-          <h3>{filmData[1].rating}</h3>
-        </div>
-        <div className="card">
-          <img src={filmData[1].image} />
-          <h2>{filmData[1].amharicTitle}</h2>
-          <h3>{filmData[1].rating}</h3>
-        </div>
-        <div className="card">
-          <img src={filmData[1].image} />
-          <h2>{filmData[1].amharicTitle}</h2>
-          <h3>{filmData[1].rating}</h3>
-        </div>
-        <div className="card">
-          <img src={filmData[1].image} />
-          <h2>{filmData[1].amharicTitle}</h2>
-          <h3>{filmData[1].rating}</h3>
-        </div>
-        <div className="card">
-          <img src={filmData[1].image} />
-          <h2>{filmData[1].amharicTitle}</h2>
-          <h3>{filmData[1].rating}</h3>
-        </div>
-        <div className="card">
-          <img src={filmData[1].image} />
-          <h2>{filmData[1].amharicTitle}</h2>
-          <h3>{filmData[1].rating}</h3>
-        </div>
-      </Carousel>
+    <div className="movie-page">
+      <TopMoviePage allFilm={allFilm} />
     </div>
   );
 };
