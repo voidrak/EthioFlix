@@ -41,7 +41,7 @@ export const MovieSlider = ({ allFilm }) => {
       className="top-movie-card"
       key={movie.id}
       style={{
-        backgroundImage: "url(src/assets/images/thumbnails/Slider2.jpg)",
+        backgroundImage: `url(src/assets/images/thumbnails/Slider2.jpg)`,
       }}
     >
       <div className="small-image">

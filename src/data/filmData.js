@@ -426,7 +426,7 @@ const filmData = [
     amharicTitle: "ትወደኛለችህ  ",
     EnglishTitle: "Twedegnalech",
     releaseYear: 2020,
-    rating: 6.9,
+    rating: 7.5,
     duration: "1h 40m",
     genre: ["Romance"],
     src: "https://www.youtube.com/watch?v=0mz4zQk2kHA",

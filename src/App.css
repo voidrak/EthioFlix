@@ -144,7 +144,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   text-decoration: none;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 .social-side ul li {
   display: flex;
@@ -236,36 +236,36 @@ body {
   column-gap: 1rem;
   align-items: flex-end;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
   background-size: cover;
   height: 400px;
   width: 100vw;
   padding: 0 0 2rem 1rem;
   isolation: isolate;
 }
-.top-movie-card::after {
+/* .top-movie-card::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 140px;
-  /* background: var(--background) 0% 0% no-repeat padding-box; */
+
   background: #000209 0% 0% no-repeat padding-box;
   opacity: 1;
   filter: blur(31px);
   z-index: -1;
-}
+} */
 .top-movie-card::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 50%;
   left: 0;
   width: 100%;
-  height: 30px;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.84));
+  height: 100%;
+  background: #000209c2 0% 0% no-repeat padding-box;
+  filter: blur(31px);
   z-index: -1;
-  /* filter: blur(3px); */
 }
 
 .top-movie-card .small-image img {
@@ -361,11 +361,77 @@ body {
   left: 10%;
 }
 
-.trend-section {
-  /* background-color: aqua; */
-  height: 400px;
+.trend-movie > h1 {
+  text-align: center;
+  color: var(--PRIMARY-COLOR);
+  margin-top: 10px;
 }
 
+.trend-section {
+  /* background-color: aqua; */
+  padding: 1rem 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  padding-bottom: 10rem;
+}
+.trend-section .trend-card {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+.trend-card img {
+  width: 90px;
+}
+.trend-card .card-info {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1rem;
+}
+.trend-card .card-info .svg-hd {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 1rem;
+}
+.trend-card .card-info .svg-hd svg {
+  width: 20px;
+  fill: var(--PRIMARY-COLOR);
+}
+.trend-card .card-info .rating-hd {
+  display: flex;
+  column-gap: 10px;
+}
+.trend-card .card-info .hd-rating p {
+  font-size: 9px;
+}
+
+.trend-card .card-info h1 {
+  font-size: 12px;
+  /* align-self: center; */
+}
+.trend-card .card-info button {
+  background-color: var(--GRAY-SHADE);
+  height: 29px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  margin-top: 12px;
+}
+.trend-card .card-info button svg {
+  width: 10px;
+  fill: var(--WHITE-ACCENT);
+}
+.trend-card .card-info button h2 {
+  font-size: 9px;
+  color: var(--PRIMARY-COLOR);
+}
 /* ------------------------MEDIA QUERY---------------------------------------- */
 
 @media screen and (min-width: 481px) and (max-width: 765px) {
@@ -386,7 +452,59 @@ body {
   .home-landing .top button {
     width: 280px;
   }
+  .shared-layout aside .svg-search {
+    justify-content: center;
+    column-gap: 10vw;
+  }
+  .shared-layout aside .svg-search input {
+    padding: 9px 10px;
+  }
+  .top-movie-card {
+    height: 85vw;
+    max-height: 530px;
+    padding: 0 0 2rem 10vw;
+  }
+
+  .trend-section .trend-card {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+  }
+  .top-movie-card .title-rating h1 {
+    font-size: clamp(1.2rem, 3.6vw, 1.6rem);
+  }
+  .top-movie-card .title-rating h2 {
+    font-size: 1.2rem;
+  }
+  .top-movie-card .movie-description {
+    font-size: clamp(13px, 2.7vw, 18px);
+  }
+  .top-movie-card .small-image img {
+    width: clamp(110px, 20vw, 130px);
+  }
+
+  .trend-movie > h1 {
+    font-size: clamp(2.2rem, 6.4vw, 4rem);
+  }
+  .trend-card img {
+    width: clamp(110px, 20vw, 140px);
+  }
+  .trend-card .card-info h1 {
+    font-size: clamp(14px, 3.4vw, 25px);
+  }
+  .trend-card .card-info .hd-rating p {
+    font-size: 16px;
+  }
+  .trend-card .card-info button {
+    height: 35px;
+    padding: 7px;
+  }
+  .trend-card .card-info button h2 {
+    font-size: clamp(10px, 1.9vw, 14px);
+  }
 }
+
+/* ---------------------------------------------------------------------- */
 
 @media screen and (min-width: 766px) {
   .header {
