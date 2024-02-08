@@ -540,6 +540,10 @@ body {
   .home-landing .top button {
     width: 280px;
   }
+  .trend-section {
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+  }
 }
 
 @media screen and (min-width: 1025px) {
