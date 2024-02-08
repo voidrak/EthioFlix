@@ -3,6 +3,20 @@ import filmData from "../../data/filmData";
 
 const TrendMovie = ({ allFilm }) => {
   const [trendMovie, setTrendMovie] = useState([]);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  // useEffect(() => {
+  //   function handleResize() {
+  //     setScreenWidth(window.innerWidth);
+  //   }
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
+  // if (screenWidth >= 766 && trendMovie.length === 4) {
+  //   trendMovie.pop();
+  // }
 
   useEffect(() => {
     const filteredTrendMovie = filmData.filter(
@@ -41,7 +55,11 @@ const TrendMovie = ({ allFilm }) => {
   return (
     <div className="trend-movie">
       <h1>Trending Movies</h1>
-      <div className="trend-section">{mappedTrendMovie}</div>
+      <div className="trend-section">
+        {window.innerWidth < 766
+          ? mappedTrendMovie.slice(0, 4)
+          : mappedTrendMovie.slice(0, 3)}
+      </div>
     </div>
   );
 };
