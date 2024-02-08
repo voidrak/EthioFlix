@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./app.css";
+import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import filmData from "./data/filmData";
 import { SharedLayout } from "./components/SharedLayout";

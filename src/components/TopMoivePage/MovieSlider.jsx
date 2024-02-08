@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import filmData from "./../../data/filmData";
+import "../../app.css";
 import ButtonGroup from "./../ButtonGroup";
 export const MovieSlider = ({ allFilm }) => {
   const [sliderMovie, setSliderMovie] = useState([]);
@@ -40,10 +40,15 @@ export const MovieSlider = ({ allFilm }) => {
     <div
       className="top-movie-card"
       key={movie.id}
-      style={{ backgroundImage: `url(${movie.image})` }}
+      style={{
+        backgroundImage: "url(src/assets/images/thumbnails/Slider2.jpg)",
+      }}
     >
       <div className="small-image">
-        <img src={movie.image} alt={movie.EnglishTitle} />
+        <img
+          src="src/assets/images/thumbnails/movie-small.jpg"
+          alt={movie.EnglishTitle}
+        />
       </div>
       <div className="movie-info">
         <div className="play-title">
