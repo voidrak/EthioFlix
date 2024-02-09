@@ -246,6 +246,12 @@ body {
   padding: 0 0 2rem 1rem;
   isolation: isolate;
 }
+.top-movie-inner {
+  position: relative;
+  display: flex;
+  column-gap: 1rem;
+  align-items: flex-end;
+}
 /* .top-movie-card::after {
   content: "";
   position: absolute;
@@ -696,6 +702,8 @@ body {
   .movie-slider {
     width: 75%;
   }
+  .top-movie-card {
+  }
   .trend-movie > h1 {
     font-size: 2rem;
   }
@@ -708,10 +716,39 @@ body {
   .trend-card img {
     width: 110px;
   }
-}
-@media screen and (min-width: 1400px) {
   .top-movie-card {
-    height: 100vw;
-    /* max-height: 600px; */
+    height: 85vh;
+    max-height: 100vh;
   }
+  .top-movie-inner {
+    margin-bottom: 4rem;
+  }
+  .top-movie-card .small-image img {
+    width: 170px;
+  }
+  .top-movie-card .title-rating {
+    margin-bottom: 15px;
+  }
+  .top-movie-card .title-rating h1 {
+    font-size: 3rem;
+  }
+  .top-movie-card .title-rating h2 {
+    font-size: 1.9rem;
+  }
+  .top-movie-card .movie-description {
+    font-size: 18px;
+    max-width: 500px;
+  }
+  .top-movie-card .play-title > svg {
+    width: 90px;
+  }
+  .top-movie-card .play-title .rating svg {
+    width: 40px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  /* .top-movie-card {
+    height: 85vh;
+    max-height: 100vh;
+  } */
 }
