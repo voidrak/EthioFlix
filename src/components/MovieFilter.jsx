@@ -14,6 +14,7 @@ const MovieFilter = ({ allFilm }) => {
   const navigate = useNavigate();
   function handleSearch() {
     setActiveSearch((prev) => !prev);
+    console.log("key down");
   }
   function handleFilterStyle(type) {
     setActiveFilter(type);
@@ -21,9 +22,10 @@ const MovieFilter = ({ allFilm }) => {
 
   const handleKeyDown = (event) => {
     if (event.keyCode === 13) {
+      setActiveSearch(false);
+      console.log("key down");
       event.preventDefault;
       navigate("/");
-      setActiveSearch(false);
     }
   };
 

@@ -394,6 +394,7 @@ body {
 
 .trend-card img {
   width: 90px;
+  border-radius: 10px;
 }
 .trend-card .card-info {
   display: flex;
@@ -456,9 +457,10 @@ body {
   border: 3px solid var(--PRIMARY-COLOR);
   padding: 4px;
   border-radius: 39px;
-  margin-bottom: 20rem;
+  margin-top: 1rem;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  margin-bottom: 20rem;
 }
 .filter-tags {
   display: flex;
@@ -519,8 +521,6 @@ body {
   top: 60px;
   left: 0;
   display: none;
-  grid-template-columns: repeat(3, 100px);
-  gap: 10px 12px;
 }
 .active-filter .year-btn,
 .active-filter .genre-btn {
@@ -610,6 +610,38 @@ body {
   }
   .trend-card .card-info button h2 {
     font-size: clamp(10px, 1.9vw, 14px);
+  }
+  .movie-filter-inner {
+    margin-top: 2rem;
+    max-width: 500px;
+    height: 60px;
+  }
+  .movie-filter-inner p {
+    font-size: 18px;
+  }
+  .mobile-search {
+    width: 120px;
+  }
+  .mobile-search input {
+    width: 90px;
+    padding: 5px 0;
+  }
+  .active-search {
+    width: 80%;
+    height: 30px;
+  }
+  .active-search input {
+    width: 80%;
+    height: 30px;
+  }
+  .year-btn,
+  .genre-btn {
+    top: 70px;
+  }
+  .active-filter .year-btn,
+  .active-filter .genre-btn {
+    grid-template-columns: repeat(3, 120px);
+    gap: 10px 12px;
   }
 }
 
