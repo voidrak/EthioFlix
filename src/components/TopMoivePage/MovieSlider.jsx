@@ -36,7 +36,7 @@ export const MovieSlider = ({ allFilm }) => {
     },
   };
 
-  const mappedSlider = allFilm.map((movie) => (
+  const mappedSlider = sliderMovie.map((movie) => (
     <div
       className="top-movie-card"
       key={movie.id}

@@ -622,6 +622,12 @@ body {
     margin-top: 6rem;
     border-radius: 55px 55px 0 0;
   }
+  .top-movie-page {
+    flex-direction: row;
+  }
+  .movie-slider {
+    width: 70%;
+  }
 }
 
 /* ---------------------------------------------------------------------- */
