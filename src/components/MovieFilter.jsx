@@ -41,6 +41,7 @@ const MovieFilter = ({ allFilm }) => {
           >
             All Movies
           </p>
+
           <div
             className={`by-year ${
               activeFilter === "year" ? "active-filter" : " "
@@ -65,8 +66,18 @@ const MovieFilter = ({ allFilm }) => {
                   {year}
                 </button>
               ))}
+              <button
+                className="close"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  setActiveFilter(false);
+                }}
+              >
+                Close
+              </button>
             </div>
           </div>
+
           <div
             className={`by-genre ${
               activeFilter === "genre" ? "active-filter" : " "
@@ -89,6 +100,15 @@ const MovieFilter = ({ allFilm }) => {
                   {genre}
                 </button>
               ))}
+              <button
+                className="close"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  setActiveFilter(false);
+                }}
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
