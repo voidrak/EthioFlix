@@ -42,11 +42,13 @@ export const MovieSlider = ({ allFilm }) => {
       key={movie.id}
       style={{
         backgroundImage: `url(src/assets/images/thumbnails/Slider2.jpg)`,
+        // backgroundImage: `url(${movie.image})`,
       }}
     >
       <div className="small-image">
         <img
           src="src/assets/images/thumbnails/movie-small.jpg"
+          // src={movie.image}
           alt={movie.EnglishTitle}
         />
       </div>

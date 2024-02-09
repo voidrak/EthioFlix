@@ -11,6 +11,7 @@ const filmData = [
     src: "https://youtu.be/EFxMJLQ6d6E?si=GQ0udCE1tHxRA5FP",
     image: "src/assets/images/thumbnails/YewendochGuday2.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -23,6 +24,7 @@ const filmData = [
     src: "https://youtu.be/3XxVNJ8szfw?si=hfVD6b7szHh4GkZd",
     image: "src/assets/images/thumbnails/YewendochGuday.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -35,6 +37,7 @@ const filmData = [
     src: "https://youtu.be/kcKHRSEp2Wg?si=aeVN9XiIvkyH4xrn",
     image: "src/assets/images/thumbnails/Difret.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -47,6 +50,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=B4N4bmSntfA&t=48s",
     image: "src/assets/images/thumbnails/MadeinChina.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -59,6 +63,7 @@ const filmData = [
     src: "",
     image: "src/assets/images/thumbnails/BechesTedebke.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -71,6 +76,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=-kittse6FQU&t=37s",
     image: "src/assets/images/thumbnails/YeAddisAbabaHabtam.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -83,6 +89,7 @@ const filmData = [
     src: "https://youtu.be/zjsNw7a99vE?si=lGjR4IQdb3fhrtes",
     image: "src/assets/images/thumbnails/SumalewVandam.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -95,6 +102,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=RfXkCXMv2qw",
     image: "src/assets/images/thumbnails/Ensaro.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -107,6 +115,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=cfWx5O2wNqI",
     image: "src/assets/images/thumbnails/Alsetem.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -119,6 +128,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=_cOiDipHLes#fromHistory",
     image: "src/assets/images/thumbnails/ADEAL.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -131,6 +141,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=-BgFT2qz4Ng#fromHistory",
     image: "src/assets/images/thumbnails/Amalayu.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -143,6 +154,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=zYp-euzxdA8",
     image: "src/assets/images/thumbnails/Dynamite.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -155,6 +167,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=SpLt_HipVew",
     image: "src/assets/images/thumbnails/Chombe.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -167,6 +180,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=u4n1bBSWPHY",
     image: "src/assets/images/thumbnails/WayneYaradaLij5.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -179,6 +193,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=u4n1bBSWPHY",
     image: "src/assets/images/thumbnails/YefikerSew.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -191,6 +206,7 @@ const filmData = [
     src: "https://youtu.be/fvJPyz1qb_Q?si=0CBEQi3hmibOMRO5",
     image: "src/assets/images/thumbnails/Tilefegn.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -203,6 +219,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=BD1cn44fMIM",
     image: "src/assets/images/thumbnails/Difret.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -215,6 +232,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=BD1cn44fMIM",
     image: "src/assets/images/thumbnails/Rebuni.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -227,6 +245,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=o_XEr6NmecI",
     image: "src/assets/images/thumbnails/YetefawLij.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -239,6 +258,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=vbbwxtUKP5Y",
     image: "src/assets/images/thumbnails/WefeKomech.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -251,6 +271,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=P76rjN7otlM",
     image: "src/assets/images/thumbnails/Jegnochu.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -263,6 +284,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=19jBWv6-iFo",
     image: "src/assets/images/thumbnails/Eweneta.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -275,6 +297,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=GK_9kGUNKEE",
     image: "src/assets/images/thumbnails/Fidelawit.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -287,6 +310,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=dRvD8_-vvbg",
     image: "src/assets/images/thumbnails/YenesAdam.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -299,6 +323,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=3ufo3k3Lvl0",
     image: "src/assets/images/thumbnails/Bandaf.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -311,6 +336,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=xJW83XMrX8A",
     image: "src/assets/images/thumbnails/Zemene.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
 
@@ -324,6 +350,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=0_etS3Xevf0",
     image: "src/assets/images/thumbnails/Absalat.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -336,6 +363,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=UVW5EWs8uyk",
     image: "src/assets/images/thumbnails/FeteshAgbign.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -348,6 +376,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=OzuEechzsgE&t=3587s",
     image: "src/assets/images/thumbnails/Dingelu.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -360,6 +389,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=piQpWsH4Th0",
     image: "src/assets/images/thumbnails/MistenDarkuat.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -372,6 +402,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=yH5P6eYEPUw",
     image: "src/assets/images/thumbnails/Astaraki2.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -383,7 +414,8 @@ const filmData = [
     genre: ["Drama", "Thriller"],
     src: "https://www.youtube.com/watch?v=PwdDP0M8l0A&t=4s",
     image: "src/assets/images/thumbnails/YekebreDeha.jpeg",
-    isSlider: false,
+    isSlider: true,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -396,6 +428,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=sXoAjDlaPkI",
     image: "src/assets/images/thumbnails/EmiyeChisu.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -408,6 +441,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=ze-sdI5JxT4",
     image: "src/assets/images/thumbnails/TrfAnchenem.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -420,6 +454,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=jmLi-nU2jmI&t=11s",
     image: "src/assets/images/thumbnails/Kiya.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -432,6 +467,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=0mz4zQk2kHA",
     image: "src/assets/images/thumbnails/Twedegnalech.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -444,6 +480,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=718Y6KtToxk",
     image: "src/assets/images/thumbnails/ZewdEnaGofer2.jpg",
     isSlider: true,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -456,6 +493,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=7Fa5cCk2ePM",
     image: "src/assets/images/thumbnails/Endateresaw.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -468,6 +506,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=i6Mog5v4f5o",
     image: "src/assets/images/thumbnails/YearbegnawLij.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -480,6 +519,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=i6Mog5v4f5o",
     image: "src/assets/images/thumbnails/HiwotEnaSak.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -490,8 +530,9 @@ const filmData = [
     duration: "1h 23m",
     genre: ["Drama"],
     src: "https://www.youtube.com/watch?v=1UWWT56l_AQ",
-    image: "src/assets/images/thumbnails/SALAFEKRAT.jpeg",
+    image: "src/assets/images/thumbnails/SALAFEKRAT.jpg",
     isSlider: false,
+    trend: true,
     id: nanoid(),
   },
   {
@@ -504,6 +545,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=sPUIq1qccGo",
     image: "src/assets/images/thumbnails/BoleManekiya.jpg",
     isSlider: false,
+    trend: true,
     id: nanoid(),
   },
   {
@@ -516,6 +558,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=Z_YEmVhzbNA",
     image: "src/assets/images/thumbnails/Be17Merf.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -528,6 +571,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=v-TQqx2UlQU",
     image: "src/assets/images/thumbnails/Inspecteru.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -540,6 +584,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=hibr2E5sVkA",
     image: "src/assets/images/thumbnails/Yiwatalen.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -552,6 +597,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=d1V6U0FCJgE&list=PL0emj0QQvrEEeN_b7mErJ46i6ew_3dK-V&index=282",
     image: "src/assets/images/thumbnails/yekerberuk.jpeg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -564,6 +610,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=rARyAYsyLxE",
     image: "src/assets/images/thumbnails/DIRDER.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -576,6 +623,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=rARyAYsyLxE",
     image: "src/assets/images/thumbnails/SetAygebamt.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -588,6 +636,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=zWWKjRhdPEI",
     image: "src/assets/images/thumbnails/300ሺ.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -600,6 +649,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=xG40wEeVuo4",
     image: "src/assets/images/thumbnails/AndTarik.jpg",
     isSlider: true,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -612,6 +662,7 @@ const filmData = [
     src: "https://www.youtube.co/m/watch?v=ePk_kPGB7Ew",
     image: "src/assets/images/thumbnails/Gizat.jpg",
     isSlider: true,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -624,6 +675,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=bEWk7i1klT4",
     image: "src/assets/images/thumbnails/Tenekakan.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -636,6 +688,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=TvDq_CUmQMQ",
     image: "src/assets/images/thumbnails/YefikirTig.jpg",
     isSlider: true,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -648,6 +701,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=o-bbzw0oURA",
     image: "src/assets/images/thumbnails/YeseneGirgir.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -660,6 +714,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=H8VYeAHTXIw&list=PL0emj0QQvrEEeN_b7mErJ46i6ew_3dK-V&index=138",
     image: "src/assets/images/thumbnails/Lalayish.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -672,6 +727,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=lnGYp08KPv8",
     image: "src/assets/images/thumbnails/AtseMandela.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -684,6 +740,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=nSiw7fUebhk",
     image: "src/assets/images/thumbnails/36Kenatoch.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -696,6 +753,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=AEqC9Q3tNrk",
     image: "src/assets/images/thumbnails/Manyazewal.jpg",
     isSlider: true,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -708,6 +766,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=nNvR8_yn_ik",
     image: "src/assets/images/thumbnails/HuletAynet.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -720,6 +779,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=BixVWMvi41g",
     image: "src/assets/images/thumbnails/SakTera.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -732,6 +792,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=Y8oCTIAnP-8",
     image: "src/assets/images/thumbnails/Manesh.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -744,6 +805,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=PqPDlsaNr-A",
     image: "src/assets/images/thumbnails/AderegshegnKena.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -756,6 +818,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=phmIAGUlKVg",
     image: "src/assets/images/thumbnails/Wedaj.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
 
@@ -769,6 +832,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=2-Hp8SPih9w",
     image: "src/assets/images/thumbnails/YeLijAstaraki.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -781,6 +845,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=G_ClmIolrXo",
     image: "src/assets/images/thumbnails/SetAmelu.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -793,6 +858,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=7uyvTelNPtI",
     image: "src/assets/images/thumbnails/Enifata.jpg",
     isSlider: true,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -805,6 +871,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=c_SKiriTmRo",
     image: "src/assets/images/thumbnails/YegodanaLij.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -817,6 +884,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=qC_yL8wkIFU",
     image: "src/assets/images/thumbnails/MadamQeberign.jpg",
     isSlider: false,
+    trend: true,
     id: nanoid(),
   },
 
@@ -830,6 +898,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=1_zzuoGW0hw",
     image: "src/assets/images/thumbnails/TanashuMafiya.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -842,6 +911,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=SvNYVWxdmjs",
     image: "src/assets/images/thumbnails/wistawaki.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
 
@@ -855,6 +925,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=SvNYVWxdmjs",
     image: "src/assets/images/thumbnails/Lamb.jpg",
     isSlider: false,
+    trend: false,
     id: nanoid(),
   },
   {
@@ -867,6 +938,7 @@ const filmData = [
     src: "https://www.youtube.com/watch?v=bTJMOyuTVLY",
     image: "src/assets/images/thumbnails/Lamba.jpg",
     isSlider: false,
+    trend: true,
     id: nanoid(),
   },
 ];

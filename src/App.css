@@ -16,6 +16,9 @@
 a:any-link {
   text-decoration: none;
 }
+button {
+  cursor: pointer;
+}
 
 body {
   background-color: var(--BG-COLOR);
@@ -271,7 +274,7 @@ body {
 .top-movie-card .small-image img {
   width: 105px;
   height: auto;
-  box-shadow: 0px 0px 7px 0px var(--BLACK-COLOR);
+  box-shadow: 0px 0px 9px 0px var(--BLACK-COLOR);
 }
 .top-movie-card .movie-info {
   display: flex;
@@ -368,14 +371,12 @@ body {
 }
 
 .trend-section {
-  /* background-color: aqua; */
   padding: 1rem 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 1rem;
+  row-gap: 1rem;
   justify-content: center;
-  padding-bottom: 10rem;
 }
 .trend-section .trend-card {
   display: flex;
@@ -406,6 +407,7 @@ body {
 }
 .trend-card .card-info .hd-rating p {
   font-size: 9px;
+  font-weight: 600;
 }
 
 .trend-card .card-info h1 {
@@ -622,11 +624,46 @@ body {
     margin-top: 6rem;
     border-radius: 55px 55px 0 0;
   }
+  .trend-movie {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .top-movie-card {
+    height: 50vw;
+    max-height: 600px;
+  }
+
   .top-movie-page {
     flex-direction: row;
+    column-gap: 5rem;
   }
   .movie-slider {
     width: 70%;
+  }
+
+  .trend-section {
+    grid-template-columns: repeat(1, 1fr);
+    width: 60%;
+  }
+  .trend-card {
+    justify-content: center;
+  }
+  .trend-movie > h1 {
+    font-size: 1.5rem;
+  }
+  .trend-card .card-info {
+    width: 120px;
+  }
+  .trend-card .card-info h1 {
+    font-size: 1.2rem;
+  }
+  .hd-rating {
+    display: flex;
+    column-gap: 10px;
+  }
+  .trend-card img {
+    width: 100px;
   }
 }
 
@@ -652,5 +689,29 @@ body {
   .home-landing .top {
     margin-top: 8rem;
     border-radius: 65px 65px 0 0;
+  }
+  .top-movie-page {
+    column-gap: 5rem;
+  }
+  .movie-slider {
+    width: 75%;
+  }
+  .trend-movie > h1 {
+    font-size: 2rem;
+  }
+  .trend-card .card-info {
+    width: 140px;
+  }
+  .trend-card .card-info h1 {
+    font-size: 1.5rem;
+  }
+  .trend-card img {
+    width: 110px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .top-movie-card {
+    height: 100vw;
+    /* max-height: 600px; */
   }
 }

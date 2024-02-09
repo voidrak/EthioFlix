@@ -19,9 +19,7 @@ const TrendMovie = ({ allFilm }) => {
   // }
 
   useEffect(() => {
-    const filteredTrendMovie = filmData.filter(
-      (movie) => movie.releaseYear > 2023 && movie.rating >= 7
-    );
+    const filteredTrendMovie = filmData.filter((movie) => movie.trend === true);
     setTrendMovie(filteredTrendMovie);
   }, [allFilm]);
 
