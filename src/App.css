@@ -547,9 +547,14 @@ body {
     max-height: 530px;
     padding: 0 0 2rem 10vw;
   }
+  .trend-movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .trend-section {
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(2, 1fr); */
+    width: 765px;
   }
   .top-movie-card .movie-info {
     margin-bottom: 2rem;
@@ -574,15 +579,14 @@ body {
     width: 30px;
   }
   .trend-movie > h1 {
-    /* font-size: 4r; */
-    font-size: clamp(2.2rem, 6.4vw, 4rem);
+    font-size: 2.2rem;
   }
 
   .trend-card img {
-    width: clamp(110px, 20vw, 140px);
+    width: 110px;
   }
   .trend-card .card-info h1 {
-    font-size: clamp(14px, 3.4vw, 25px);
+    font-size: 14px;
   }
   .trend-card .card-info .hd-rating p {
     font-size: 16px;
@@ -593,7 +597,7 @@ body {
   }
 
   .trend-card .card-info button h2 {
-    font-size: clamp(10px, 1.9vw, 14px);
+    font-size: 10px;
   }
 }
 
