@@ -748,7 +748,7 @@ const filmData = [
     rating: 7.9,
     duration: "1h 54m",
     genre: ["Drama", "Crime"],
-    src: "https://www.youtube.com/watch/embed/AEqC9Q3tNrk",
+    src: "AEqC9Q3tNrk?si=cfURIFu6gCRhfd7p",
     image: "src/assets/images/thumbnails/Manyazewal.jpg",
     isSlider: true,
     trend: false,
