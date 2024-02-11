@@ -11,6 +11,7 @@ import { ErrorPage } from "./pages/ErrorPage";
 const App = () => {
   const [sideBar, setSideBar] = useState(false);
   const [allFilm, setAllFilm] = useState(filmData);
+  const [mainMovieList, setMainMovieList] = useState(allFilm);
   function handleSideBar() {
     setSideBar((prev) => !prev);
   }
@@ -29,7 +30,16 @@ const App = () => {
               <HomePage handleSideBar={handleSideBar} sideBar={sideBar} />
             }
           />
-          <Route path="home" element={<MoviePage allFilm={allFilm} />} />
+          <Route
+            path="home"
+            element={
+              <MoviePage
+                allFilm={allFilm}
+                mainMovieList={mainMovieList}
+                setMainMovieList={setMainMovieList}
+              />
+            }
+          />
           <Route path="home/:movieId" element={<WatchMoviePage />} />
         </Route>
         <Route path="*" element={<ErrorPage />} />

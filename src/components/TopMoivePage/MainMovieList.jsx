@@ -1,19 +1,11 @@
-import React, { useEffect, useState } from "react";
-import filmData from "../../data/filmData";
+import React from "react";
 
-const TrendMovie = ({ allFilm }) => {
-  const [trendMovie, setTrendMovie] = useState([]);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const filteredTrendMovie = filmData.filter((movie) => movie.trend === true);
-    setTrendMovie(filteredTrendMovie);
-  }, [allFilm]);
-
-  const mappedTrendMovie = trendMovie.map((movie) => {
-    return (
+const MainMovieList = ({ mainMovieList }) => {
+  const mappedMainMovie = mainMovieList
+    .sort((a, b) => b.rating - a.rating)
+    .map((movie) => (
       <div className="trend-card" key={movie.id}>
-        <img src={movie.image} alt="movie thumbnail" />
+        <img src={movie.image} alt={movie.EnglishTitle} />
 
         <div className="card-info">
           <div className="svg-hd">
@@ -34,15 +26,15 @@ const TrendMovie = ({ allFilm }) => {
           </button>
         </div>
       </div>
-    );
-  });
-
+    ));
   return (
-    <div className="trend-movie">
-      <h1>Trending Movies</h1>
-      <div className="trend-section">{mappedTrendMovie}</div>
+    <div className="main-movie">
+      {" "}
+      <div className="trend-movie">
+        <div className="trend-section">{mappedMainMovie}</div>
+      </div>
     </div>
   );
 };
 
-export default TrendMovie;
+export default MainMovieList;
