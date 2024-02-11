@@ -562,13 +562,20 @@ body {
 }
 .movie-section .main-movie-card {
   display: flex;
-  column-gap: 1rem;
+  column-gap: 0.5rem;
   justify-content: center;
 }
 
 .main-movie-card img {
-  width: 90px;
+  width: 80px;
   border-radius: 10px;
+}
+.main-movie-card .thumbnail {
+  width: 90px;
+  height: 120px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .main-movie-card .card-info {
   display: flex;

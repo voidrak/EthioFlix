@@ -5,8 +5,12 @@ const MainMovieList = ({ mainMovieList }) => {
     .sort((a, b) => b.rating - a.rating)
     .map((movie) => (
       <div className="main-movie-card" key={movie.id}>
-        <img src={movie.image} alt={movie.EnglishTitle} />
-
+        <div
+          className="thumbnail"
+          style={{ backgroundImage: `url(${movie.image})` }}
+        >
+          {/* <img src={movie.image} alt={movie.EnglishTitle} /> */}
+        </div>
         <div className="card-info">
           <div className="svg-hd">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
