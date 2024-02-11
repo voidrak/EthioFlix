@@ -4,7 +4,7 @@ const MainMovieList = ({ mainMovieList }) => {
   const mappedMainMovie = mainMovieList
     .sort((a, b) => b.rating - a.rating)
     .map((movie) => (
-      <div className="trend-card" key={movie.id}>
+      <div className="main-movie-card" key={movie.id}>
         <img src={movie.image} alt={movie.EnglishTitle} />
 
         <div className="card-info">
@@ -29,10 +29,7 @@ const MainMovieList = ({ mainMovieList }) => {
     ));
   return (
     <div className="main-movie">
-      {" "}
-      <div className="trend-movie">
-        <div className="trend-section">{mappedMainMovie}</div>
-      </div>
+      <div className="movie-section">{mappedMainMovie}</div>
     </div>
   );
 };
