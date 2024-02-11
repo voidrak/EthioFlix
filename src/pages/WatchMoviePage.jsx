@@ -1,10 +1,10 @@
 import React from "react";
 import WatchMovie from "../components/WatchMovie";
 
-const WatchMoviePage = () => {
+const WatchMoviePage = ({ allFilm }) => {
   return (
     <div>
-      <WatchMovie />
+      <WatchMovie allFilm={allFilm} />
     </div>
   );
 };

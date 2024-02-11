@@ -1,5 +1,3 @@
-import { nanoid } from "nanoid";
-
 const filmData = [
   {
     amharicTitle: "የወንዶች ጉዳይ",
@@ -12,7 +10,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/YewendochGuday2.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "uskIp1c",
   },
   {
     amharicTitle: "የወንዶች ጉዳይ 2",
@@ -25,7 +23,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/YewendochGuday.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "5JXApmM",
   },
   {
     amharicTitle: "ድፍረት",
@@ -38,7 +36,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Difret.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "7d1gh63",
   },
   {
     amharicTitle: "ሜድ ኢን ቻይና ",
@@ -51,7 +49,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/MadeinChina.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "1JWVYea ",
   },
   {
     amharicTitle: "በጭስ ተደብቄ",
@@ -64,7 +62,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/BechesTedebke.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "ii3vYM4",
   },
   {
     amharicTitle: "የአዲስ አበባ ሀብታም",
@@ -77,7 +75,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/YeAddisAbabaHabtam.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "dzdBaMA",
   },
   {
     amharicTitle: "ሱማሌው ቫንዳም ",
@@ -90,7 +88,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/SumalewVandam.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "rBP8TqX",
   },
   {
     amharicTitle: "እንሳሮ",
@@ -103,7 +101,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Ensaro.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "jNPqC41",
   },
   {
     amharicTitle: "አልሰጥም",
@@ -116,7 +114,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Alsetem.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "mXmzqSE",
   },
   {
     amharicTitle: "አድኤል ",
@@ -129,7 +127,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/ADEAL.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "DhYDp72",
   },
   {
     amharicTitle: "አማላዩ ",
@@ -142,7 +140,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Amalayu.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "czsUalr",
   },
   {
     amharicTitle: "ዳይናማይት ",
@@ -155,7 +153,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Dynamite.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "WZn83pY",
   },
   {
     amharicTitle: "ቾምቤ ",
@@ -168,7 +166,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Chombe.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "JbypaWf",
   },
   {
     amharicTitle: "ወይኔ የአራዳ ልጅ 5 ",
@@ -181,7 +179,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/WayneYaradaLij5.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "RghqXJt",
   },
   {
     amharicTitle: "የፍቅር ሰው ",
@@ -194,7 +192,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/YefikerSew.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "rx9q1a3",
   },
   {
     amharicTitle: "ጥለፈኝ",
@@ -207,7 +205,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Tilefegn.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "y0WskFR",
   },
   {
     amharicTitle: "ረቡኒ",
@@ -220,7 +218,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Difret.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "ejIIFqw",
   },
   {
     amharicTitle: "ምዕራፍ ሁለት",
@@ -233,7 +231,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/MierafHulet.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "VobjFVZ",
   },
   {
     amharicTitle: "የጠፋው ልጅ",
@@ -246,7 +244,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/YetefawLij.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "2ZQVwv9",
   },
   {
     amharicTitle: "ወፌ ቆመች",
@@ -259,7 +257,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/WefeKomech.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "ETACFtg",
   },
   {
     amharicTitle: "ጀግኖቹ",
@@ -272,7 +270,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Jegnochu.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "WceNZq4",
   },
   {
     amharicTitle: "እውነታ",
@@ -285,7 +283,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Eweneta.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "S1vfMSa",
   },
   {
     amharicTitle: "ፊደላዊት",
@@ -298,7 +296,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Fidelawit.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "wimKQ65",
   },
   {
     amharicTitle: "የእኔስ አዳም",
@@ -311,7 +309,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/YenesAdam.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "wb64v1G",
   },
   {
     amharicTitle: "ባንዳፍ",
@@ -324,7 +322,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Bandaf.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "XWyuNHR",
   },
   {
     amharicTitle: "ዘመኔ",
@@ -337,7 +335,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Zemene.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "kRudBbV",
   },
 
   {
@@ -351,7 +349,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Absalat.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "HIROaw3",
   },
   {
     amharicTitle: "ፈተሽ አግቢኝ",
@@ -364,7 +362,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/FeteshAgbign.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "3lfzGxX",
   },
   {
     amharicTitle: "ድንግሉ",
@@ -377,7 +375,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Dingelu.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "67Tdlua",
   },
   {
     amharicTitle: "ሚስቴን ዳርኳት ",
@@ -390,7 +388,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/MistenDarkuat.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "u3nvEXa",
   },
   {
     amharicTitle: "አስታራቂ 2 ",
@@ -403,7 +401,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Astaraki2.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "pf5JiW2",
   },
   {
     amharicTitle: "የከበረ ደሃ",
@@ -416,7 +414,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/YekebreDeha.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "3AI2V94",
   },
   {
     amharicTitle: "እምዬ ጭሱ",
@@ -429,7 +427,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/EmiyeChisu.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "NP7ueIH",
   },
   {
     amharicTitle: "ትርፍ አንጭንም",
@@ -442,7 +440,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/TrfAnchenem.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "EU52bUu",
   },
   {
     amharicTitle: "ኪያ ",
@@ -455,7 +453,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Kiya.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "pJYg9rf",
   },
   {
     amharicTitle: "ትወደኛለችህ  ",
@@ -468,7 +466,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Twedegnalech.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "BlwoTqi",
   },
   {
     amharicTitle: "ዘውድ እና ጎፈር 2  ",
@@ -481,7 +479,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/ZewdEnaGofer2.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "AHY5glC",
   },
   {
     amharicTitle: "እንዳትረሳው",
@@ -494,7 +492,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Endateresaw.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "kng8QYT",
   },
   {
     amharicTitle: "የአርበኛው ልጅ",
@@ -507,7 +505,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/YearbegnawLij.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "kZ8sTdT",
   },
   {
     amharicTitle: "ህይወት እና ሳቅ",
@@ -520,7 +518,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/HiwotEnaSak.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "ftYBNBP",
   },
   {
     amharicTitle: "ሳላፈቅራት",
@@ -533,7 +531,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/SALAFEKRAT.jpg",
     isSlider: false,
     trend: true,
-    id: nanoid(),
+    id: "koRy0nt",
   },
   {
     amharicTitle: "ቦሌ ማነቂያ",
@@ -546,7 +544,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/BoleManekiya.jpg",
     isSlider: false,
     trend: true,
-    id: nanoid(),
+    id: "VJOhjeH",
   },
   {
     amharicTitle: "በ17 መርፌ",
@@ -559,7 +557,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Be17Merf.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "I82knJk",
   },
   {
     amharicTitle: "ኢንስፔክተሩ",
@@ -572,7 +570,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Inspecteru.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "v45y0PZ",
   },
   {
     amharicTitle: "ይዋጣልን ",
@@ -585,7 +583,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Yiwatalen.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "IxCc2mK",
   },
   {
     amharicTitle: "የቅርብ ሩቅ ",
@@ -598,7 +596,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/yekerberuk.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "ieTOwLd",
   },
   {
     amharicTitle: "ድርድር",
@@ -611,7 +609,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/DIRDER.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "oufO7YC",
   },
   {
     amharicTitle: "ሴት አይገባም",
@@ -624,7 +622,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/SetAygebamt.jpg",
     isSlider: true,
     trend: false,
-    id: nanoid(),
+    id: "DtnrUyY",
   },
   {
     amharicTitle: "300ሺ",
@@ -637,7 +635,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/300ሺ.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "wEGKpd7",
   },
   {
     amharicTitle: "አንድ ታሪክ ",
@@ -650,7 +648,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/AndTarik.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "iBvcZkm",
   },
   {
     amharicTitle: "ግዛት",
@@ -663,7 +661,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Gizat.jpg",
     isSlider: true,
     trend: false,
-    id: nanoid(),
+    id: "EiTkzIp",
   },
   {
     amharicTitle: "ተነቃቃን",
@@ -676,7 +674,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Tenekakan.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "skBrYEq",
   },
   {
     amharicTitle: "የፍቅር ጥግ",
@@ -689,7 +687,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/YefikirTig.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "66jelQh",
   },
   {
     amharicTitle: "የሰኔ ግርግር",
@@ -702,7 +700,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/YeseneGirgir.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "0R7Mrkw",
   },
   {
     amharicTitle: "ላላይሽ ",
@@ -715,7 +713,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Lalayish.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "lvym7hN",
   },
   {
     amharicTitle: "አዔ ማንዴላ",
@@ -728,7 +726,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/AtseMandela.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "v1POdd0",
   },
   {
     amharicTitle: "36 ቀናቶች",
@@ -741,7 +739,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/36Kenatoch.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "dwL2waD",
   },
   {
     amharicTitle: "ማን ያዘዋል",
@@ -750,11 +748,11 @@ const filmData = [
     rating: 7.9,
     duration: "1h 54m",
     genre: ["Drama", "Crime"],
-    src: "https://www.youtube.com/watch?v=AEqC9Q3tNrk",
+    src: "https://www.youtube.com/watch/embed/AEqC9Q3tNrk",
     image: "src/assets/images/thumbnails/Manyazewal.jpg",
     isSlider: true,
     trend: false,
-    id: nanoid(),
+    id: "TXs4PSH",
   },
   {
     amharicTitle: "ሁለት አይነት",
@@ -767,7 +765,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/HuletAynet.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "HVwSHvN",
   },
   {
     amharicTitle: "ሳቅ ተራ",
@@ -780,7 +778,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/SakTera.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "AL3aZCW",
   },
   {
     amharicTitle: "ማነሸ ",
@@ -793,7 +791,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Manesh.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "9M2Pyg5",
   },
   {
     amharicTitle: "አደረግሽኝ ቀና",
@@ -806,7 +804,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/AderegshegnKena.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "9hQklN4",
   },
   {
     amharicTitle: "ወዳጅ",
@@ -819,7 +817,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Wedaj.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "qeJMxgV",
   },
 
   {
@@ -833,7 +831,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/YeLijAstaraki.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "miKZWfJ",
   },
   {
     amharicTitle: "ሴት አመሉ",
@@ -846,7 +844,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/SetAmelu.jpg",
     isSlider: true,
     trend: false,
-    id: nanoid(),
+    id: "0nnFdmA",
   },
   {
     amharicTitle: "እንፋታ",
@@ -859,7 +857,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Enifata.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "wg5oFyz",
   },
   {
     amharicTitle: "የጎዳና ልጅ ",
@@ -872,7 +870,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/YegodanaLij.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "eMox9zr",
   },
   {
     amharicTitle: "ማዳም ቅበሪኝ",
@@ -885,7 +883,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/MadamQeberign.jpg",
     isSlider: false,
     trend: true,
-    id: nanoid(),
+    id: "BLFjZiy",
   },
 
   {
@@ -899,7 +897,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/TanashuMafiya.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "YMOhZwW",
   },
   {
     amharicTitle: "ውስጥ አዋቂ",
@@ -912,7 +910,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/wistawaki.jpg",
     isSlider: true,
     trend: false,
-    id: nanoid(),
+    id: "UPfxJUH",
   },
 
   {
@@ -926,7 +924,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Lamb.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "rr8pKGt",
   },
   {
     amharicTitle: "ላምባ  ",
@@ -939,7 +937,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Lamba.jpg",
     isSlider: false,
     trend: true,
-    id: nanoid(),
+    id: "SJNjPqV",
   },
   {
     amharicTitle: "ጤዛ",
@@ -952,7 +950,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Teza.jpeg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "vJFFTIs",
   },
   {
     amharicTitle: "ስለአንቺ",
@@ -965,7 +963,7 @@ const filmData = [
     image: "src/assets/images/thumbnails/Selanchi.jpg",
     isSlider: false,
     trend: false,
-    id: nanoid(),
+    id: "xpRDrNr",
   },
 ];
 

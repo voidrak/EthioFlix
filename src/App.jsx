@@ -40,7 +40,10 @@ const App = () => {
               />
             }
           />
-          <Route path="home/:movieId" element={<WatchMoviePage />} />
+          <Route
+            path="home/:currentMovieId"
+            element={<WatchMoviePage allFilm={allFilm} />}
+          />
         </Route>
         <Route path="*" element={<ErrorPage />} />
       </Routes>

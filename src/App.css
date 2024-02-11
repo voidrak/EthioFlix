@@ -303,7 +303,7 @@ body {
 .top-movie-card .play-title svg {
   fill: var(--PRIMARY-COLOR);
 }
-.top-movie-card .play-title > svg {
+.top-movie-card .play-title .play-btn {
   width: 50px;
 }
 
@@ -828,7 +828,7 @@ body {
     font-size: 18px;
     max-width: 500px;
   }
-  .top-movie-card .play-title > svg {
+  .top-movie-card .play-title .play-btn {
     width: 70px;
   }
   .top-movie-card .play-title .rating svg {
@@ -1065,7 +1065,7 @@ body {
     font-size: 18px;
     max-width: 500px;
   }
-  .top-movie-card .play-title > svg {
+  .top-movie-card .play-title .play-btn {
     width: 90px;
   }
   .top-movie-card .play-title .rating svg {
