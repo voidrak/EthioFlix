@@ -41,17 +41,22 @@ export const MovieSlider = ({ allFilm }) => {
       className="top-movie-card"
       key={movie.id}
       style={{
-        backgroundImage: `url(src/assets/images/thumbnails/Slider2.jpg)`,
-        // backgroundImage: `url(${movie.image})`,
+        // backgroundImage: `url(src/assets/images/thumbnails/Slider2.jpg)`,
+        backgroundImage: `url(${movie.image})`,
       }}
     >
       <div className="top-movie-inner">
-        <div className="small-image">
-          <img
-            src="src/assets/images/thumbnails/movie-small.jpg"
-            // src={movie.image}
+        <div
+          className="small-image"
+          style={{
+            backgroundImage: `url(${movie.image})`,
+          }}
+        >
+          {/* <img
+            // src="src/assets/images/thumbnails/movie-small.jpg"
+            src={movie.image}
             alt={movie.EnglishTitle}
-          />
+          /> */}
         </div>
         <div className="movie-info">
           <div className="play-title">

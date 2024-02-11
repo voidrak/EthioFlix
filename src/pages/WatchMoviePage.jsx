@@ -1,7 +1,12 @@
 import React from "react";
+import WatchMovie from "../components/WatchMovie";
 
 const WatchMoviePage = () => {
-  return <div>WatchMoviePage</div>;
+  return (
+    <div>
+      <WatchMovie />
+    </div>
+  );
 };
 
 export default WatchMoviePage;

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import MainMovieList from "./TopMoivePage/MainMovieList";
 
-const MovieFilter = ({ allFilm, setMainMovieList }) => {
+const MovieFilter = ({ allFilm, setMainMovieList, mainMovieList }) => {
   const [activeSearch, setActiveSearch] = useState(false);
   const [activeFilter, setActiveFilter] = useState("");
 
@@ -18,6 +19,22 @@ const MovieFilter = ({ allFilm, setMainMovieList }) => {
   }
   function handleFilterStyle(type) {
     setActiveFilter(type);
+  }
+  function handleYear(event, year) {
+    event.stopPropagation();
+    setActiveFilter("false");
+    const filteredMovie = allFilm.filter((movie) => movie.releaseYear === year);
+    console.log(filteredMovie);
+    setMainMovieList(filteredMovie);
+  }
+  function handleGenre(event, genre) {
+    event.stopPropagation();
+    setActiveFilter("false");
+    const filteredMovie = allFilm.filter(
+      (movie) => movie.genre[0] === genre || movie.genre[1] === genre
+    );
+
+    setMainMovieList(filteredMovie);
   }
 
   const handleKeyDown = (event) => {
@@ -37,6 +54,7 @@ const MovieFilter = ({ allFilm, setMainMovieList }) => {
             className={`${activeFilter === "all" ? "active-filter" : " "}`}
             onClick={() => {
               handleFilterStyle("all");
+              setMainMovieList(allFilm);
             }}
           >
             All Movies
@@ -56,13 +74,7 @@ const MovieFilter = ({ allFilm, setMainMovieList }) => {
             </svg>
             <div className="year-btn">
               {filterYear.map((year) => (
-                <button
-                  key={year}
-                  onClick={(event) => {
-                    event.stopPropagation();
-                    setActiveFilter("false");
-                  }}
-                >
+                <button key={year} onClick={(event) => handleYear(event, year)}>
                   {year}
                 </button>
               ))}
@@ -92,10 +104,7 @@ const MovieFilter = ({ allFilm, setMainMovieList }) => {
               {filterGenre.map((genre) => (
                 <button
                   key={genre}
-                  onClick={(event) => {
-                    event.stopPropagation();
-                    setActiveFilter("false");
-                  }}
+                  onClick={(event) => handleGenre(event, genre)}
                 >
                   {genre}
                 </button>

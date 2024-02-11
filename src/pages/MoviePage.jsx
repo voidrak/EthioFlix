@@ -6,7 +6,11 @@ const MoviePage = ({ allFilm, setMainMovieList, mainMovieList }) => {
   return (
     <div className="movie-page">
       <TopMoviePage allFilm={allFilm} />
-      <MovieFIlter allFilm={allFilm} setMainMovieList={setMainMovieList} />
+      <MovieFIlter
+        allFilm={allFilm}
+        setMainMovieList={setMainMovieList}
+        mainMovieList={mainMovieList}
+      />
       <MainMovieList mainMovieList={mainMovieList} />
     </div>
   );
