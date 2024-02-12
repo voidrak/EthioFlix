@@ -30,8 +30,8 @@ const MovieFilter = ({ allFilm, setMainMovieList, mainMovieList }) => {
   function handleGenre(event, genre) {
     event.stopPropagation();
     setActiveFilter("false");
-    const filteredMovie = allFilm.filter(
-      (movie) => movie.genre[0] === genre || movie.genre[1] === genre
+    const filteredMovie = allFilm.filter((movie) =>
+      movie.genre.includes(genre)
     );
 
     setMainMovieList(filteredMovie);

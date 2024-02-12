@@ -27,7 +27,11 @@ const App = () => {
           <Route
             index
             element={
-              <HomePage handleSideBar={handleSideBar} sideBar={sideBar} />
+              <HomePage
+                handleSideBar={handleSideBar}
+                sideBar={sideBar}
+                allFilm={allFilm}
+              />
             }
           />
           <Route

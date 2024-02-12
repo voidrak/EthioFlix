@@ -704,6 +704,14 @@ body {
   fill: var(--PRIMARY-COLOR);
   width: 20px;
 }
+
+tr,
+th,
+td {
+  border: 1px solid var(--PRIMARY-COLOR);
+  border-collapse: collapse;
+  padding: 10px;
+}
 /* ------------------------MEDIA QUERY---------------------------------------- */
 
 @media screen and (min-width: 481px) and (max-width: 765px) {
