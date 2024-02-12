@@ -710,7 +710,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  border: 1px solid var(--BLACK-COLOR);
+  /* border: 1px solid var(--BLACK-COLOR); */
 }
 .search-result-container .result-row {
   display: flex;
@@ -723,6 +723,7 @@ body {
 }
 .search-result-container .result-row .search-img {
   width: 18%;
+  max-width: 100px;
   aspect-ratio: 233/330;
   background-position: center;
   background-repeat: no-repeat;
@@ -852,6 +853,9 @@ body {
   }
   .main-movie-card .card-info h1 {
     font-size: 22px;
+  }
+  .search-result-container {
+    width: 80%;
   }
 }
 /* ---------------------------------------------------------------------- */
@@ -1211,6 +1215,9 @@ body {
   .current-movie .add-to {
     margin-left: 10%;
   }
+  .search-result-container {
+    width: 70%;
+  }
 }
 @media screen and (min-width: 1314px) {
   .trend-section .trend-card:last-child {
@@ -1242,6 +1249,9 @@ body {
   .home-landing .top .input-btn input {
     padding: 15px 15px;
   }
+  .search-result-container {
+    width: 65%;
+  }
 }
 @media screen and (min-width: 1750px) {
   .movie-section {
@@ -1263,5 +1273,11 @@ body {
   }
   .current-movie .movie-info .rating-year-genre .genre p {
     padding: 8px 15px;
+  }
+  .home-landing .top .input-btn input {
+    padding: 25px 30px;
+  }
+  .search-result-container {
+    width: 60%;
   }
 }
