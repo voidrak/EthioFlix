@@ -456,7 +456,7 @@ const filmData = [
     id: "pJYg9rf",
   },
   {
-    amharicTitle: "ትወደኛለችህ  ",
+    amharicTitle: "ትወደኛለችህ ",
     EnglishTitle: "Twedegnalech",
     releaseYear: 2020,
     rating: 7.5,

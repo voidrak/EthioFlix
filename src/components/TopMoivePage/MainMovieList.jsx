@@ -27,11 +27,11 @@ const MainMovieList = ({ mainMovieList }) => {
             </div>
           </div>
 
-          <button>
-            <Link to={`${movie.id}`}>
+          <Link to={`${movie.id}`}>
+            <button>
               <h2>WATCH NOW </h2>
-            </Link>
-          </button>
+            </button>
+          </Link>
         </div>
       </div>
     ));
