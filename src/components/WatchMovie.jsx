@@ -11,16 +11,13 @@ const WatchMovie = ({ allFilm }) => {
     setCurrentMovie(filteredCurrent);
   }, [allFilm]);
 
-  console.log(currentMovieId);
-  if (currentMovie) {
-    console.log(currentMovie[0].src);
-  }
+  // const mappedCurrent= currentMovie.map((movie)=>(
+
+  // ))
 
   return currentMovie ? (
-    <div>
+    <div className="current-movie">
       <iframe
-        width="560"
-        height="315"
         src={`https://www.youtube.com/embed/${currentMovie[0].src}`}
         title="YouTube video player"
         frameborder="0"

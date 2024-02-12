@@ -634,6 +634,11 @@ body {
   color: var(--PRIMARY-COLOR);
 }
 
+.current-movie iframe {
+  width: 60%;
+  height: 50vh;
+}
+
 /* ------------------------MEDIA QUERY---------------------------------------- */
 
 @media screen and (min-width: 481px) and (max-width: 765px) {
