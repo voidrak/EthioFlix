@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { debounce } from "lodash";
 
 const HomeLanding = ({ allFilm }) => {
   const [searchInput, setSearchInput] = useState("");
-  const [testList, setTestList] = useState(null);
-  useEffect(() => {
-    const filteredList = allFilm.filter((movie) =>
-      movie.genre.includes("Thriller")
-    );
-    setTestList(filteredList);
-  }, [allFilm]);
+  const [searchResult, setSearchResult] = useState(allFilm);
+  // useEffect(() => {
+  //   const filteredList = allFilm.filter((movie) =>
+  //     movie.genre.includes("Thriller")
+  //   );
+  //   setTestList(filteredList);
+  // }, [allFilm]);
   const handleChange = debounce((e) => {
     setSearchInput(e.target.value);
     console.log(searchInput);
-  }, 200);
+  }, 400);
   return (
     <div className="home-landing">
       <div className="top">
@@ -31,6 +31,34 @@ const HomeLanding = ({ allFilm }) => {
             </svg>
           </div>
         </div>
+
+        <div className="search-result-container">
+          {searchResult &&
+            searchResult
+              .filter((item) => {
+                return searchInput.toLowerCase() === ""
+                  ? null
+                  : item.EnglishTitle.toLowerCase().includes(searchInput);
+              })
+              .map((movie) => (
+                <NavLink to={`home/${movie.id}`} style={{ color: "white" }}>
+                  <div className="result-row" key={movie.id}>
+                    <div
+                      className="search-img"
+                      style={{ backgroundImage: `url(${movie.image})` }}
+                    ></div>
+                    <div className="result-info">
+                      <h3 className="title">{movie.amharicTitle}</h3>
+                      <div className="rating-duration-genre">
+                        <p className="year">{movie.releaseYear}</p> .
+                        <p className="duration">{movie.duration}</p> .
+                        <p className="rating">{movie.rating}</p>
+                      </div>
+                    </div>
+                  </div>
+                </NavLink>
+              ))}
+        </div>
         <Link to="/home">
           <button>
             <h1>View Full Site</h1>
@@ -39,28 +67,6 @@ const HomeLanding = ({ allFilm }) => {
             </svg>
           </button>
         </Link>
-
-        <div className="test">
-          <table>
-            <thead></thead>
-            <tbody>
-              {testList &&
-                testList
-                  .filter((item) => {
-                    return searchInput.toLowerCase() === ""
-                      ? null
-                      : item.EnglishTitle.toLowerCase().includes(searchInput);
-                  })
-                  .map((movie) => (
-                    <tr key={movie.id}>
-                      <td>{movie.EnglishTitle}</td>
-                      <td>{movie.genre}</td>
-                      <td>{movie.rating}</td>
-                    </tr>
-                  ))}
-            </tbody>
-          </table>
-        </div>
       </div>
     </div>
   );
