@@ -26,23 +26,23 @@ const Header = ({ handleSideBar }) => {
           <li>
             <NavLink
               to="/"
-              className={({ isActive }) => (isActive ? "link active" : "link")}
+              className={({ isActive }) => (isActive ? "link " : "link")}
             >
               HOME
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="about"
-              className={({ isActive }) => (isActive ? "link active" : "link")}
+              to="home"
+              className={({ isActive }) => (isActive ? "link " : "link")}
             >
-              ABOUT
+              BROWSE
             </NavLink>
           </li>
           <li>
             <NavLink
               to="contactus"
-              className={({ isActive }) => (isActive ? "link active" : "link")}
+              className={({ isActive }) => (isActive ? "link " : "link")}
             >
               CONTACT US
             </NavLink>

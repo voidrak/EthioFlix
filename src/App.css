@@ -62,7 +62,7 @@ body {
   column-gap: 1.5rem;
 }
 .header .larger-screen-header ul li .link {
-  color: white;
+  color: var(--WHITE-ACCENT);
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;
@@ -71,7 +71,8 @@ body {
   color: var(--PRIMARY-COLOR);
   text-decoration: none;
 }
-.header .larger-screen-header ul li:hover {
+.header .larger-screen-header ul li:hover,
+.header .larger-screen-header ul li .link:hover {
   color: var(--PRIMARY-COLOR);
 }
 
@@ -511,7 +512,7 @@ body {
   font-size: 1rem;
 }
 .mobile-search svg {
-  fill: black;
+  fill: var(--BLACK-COLOR);
 }
 .active-search {
   width: 90%;
@@ -633,12 +634,76 @@ body {
   font-size: 12px;
   color: var(--PRIMARY-COLOR);
 }
-
+.current-movie {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
 .current-movie iframe {
-  width: 60%;
-  height: 50vh;
+  width: 100%;
+  aspect-ratio: 16/9;
+  align-self: center;
+}
+.current-movie .movie-info {
+  margin-left: 5%;
+  margin-bottom: 1.5rem;
+}
+.current-movie .movie-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
+.current-movie .movie-info .rating-year-genre {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.current-movie .movie-info .rating-year-genre .rating {
+  display: flex;
+  column-gap: 5px;
+}
+.current-movie .movie-info .rating-year-genre .rating p,
+.current-movie .movie-info .rating-year-genre .year {
+  font-size: 18px;
+  font-weight: 700;
+}
+.current-movie .movie-info .rating-year-genre .rating svg {
+  fill: var(--PRIMARY-COLOR);
+  width: 20px;
+}
+
+.current-movie .movie-info .rating-year-genre .genre {
+  display: flex;
+  column-gap: 10px;
+}
+.current-movie .movie-info .rating-year-genre .genre p {
+  background-color: var(--GRAY-SHADE);
+  padding: 0 15px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+.current-movie .add-to {
+  margin-left: 5%;
+  display: flex;
+  column-gap: 2rem;
+}
+.current-movie .add-to button {
+  background-color: var(--BLACK-COLOR);
+  padding: 5px 10px;
+  column-gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--PRIMARY-COLOR);
+  border: none;
+  border-radius: 7px;
+}
+.current-movie .add-to svg {
+  fill: var(--PRIMARY-COLOR);
+  width: 20px;
+}
 /* ------------------------MEDIA QUERY---------------------------------------- */
 
 @media screen and (min-width: 481px) and (max-width: 765px) {
@@ -772,7 +837,7 @@ body {
 @media screen and (min-width: 766px) {
   .header {
     justify-content: space-evenly;
-    column-gap: 4rem;
+    column-gap: 3.8rem;
     height: 100px;
   }
   .header .header-menu,
@@ -802,6 +867,10 @@ body {
   }
   .home-landing .top button {
     width: 280px;
+  }
+  .home-landing .top .input-btn input {
+    padding: 15px 15px;
+    font-size: 1rem;
   }
   .top-movie-card {
     height: 85vw;
@@ -920,6 +989,21 @@ body {
   .movie-section {
     grid-template-columns: repeat(4, 1fr);
   }
+  .current-movie .movie-info .rating-year-genre .rating svg {
+    width: 22px;
+  }
+  .current-movie .movie-info .rating-year-genre .rating p,
+  .current-movie .movie-info .rating-year-genre .year {
+    font-size: 22px;
+  }
+  .current-movie .movie-info .rating-year-genre .genre p {
+    padding: 2px 15px;
+  }
+  .current-movie .add-to button {
+    padding: 10px;
+    font-size: 15px;
+    column-gap: 0.5rem;
+  }
 }
 
 /* ---------------------------------------------------------------------- */
@@ -993,6 +1077,28 @@ body {
   }
   .movie-section {
     grid-template-columns: repeat(5, 1fr);
+  }
+  .current-movie iframe {
+    width: 85%;
+  }
+  .current-movie .movie-info,
+  .current-movie .add-to {
+    margin-left: 7.5%;
+  }
+  .current-movie .movie-info .rating-year-genre .rating svg {
+    width: 25px;
+  }
+  .current-movie .movie-info .rating-year-genre .rating p,
+  .current-movie .movie-info .rating-year-genre .year {
+    font-size: 25px;
+  }
+  .current-movie .movie-info .rating-year-genre .genre p {
+    padding: 4px 15px;
+  }
+  .current-movie .add-to button {
+    font-size: 18px;
+    padding: 12px 10px;
+    font-size: 18px;
   }
 }
 
@@ -1076,6 +1182,13 @@ body {
   .top-movie-card .play-title .rating svg {
     width: 40px;
   }
+  .current-movie iframe {
+    width: 80%;
+  }
+  .current-movie .movie-info,
+  .current-movie .add-to {
+    margin-left: 10%;
+  }
 }
 @media screen and (min-width: 1314px) {
   .trend-section .trend-card:last-child {
@@ -1084,9 +1197,49 @@ body {
   .movie-section {
     grid-template-columns: repeat(6, 1fr);
   }
+  .current-movie iframe {
+    width: 75%;
+  }
+  .current-movie .movie-info,
+  .current-movie .add-to {
+    margin-left: 12%;
+  }
+  .current-movie .movie-info .rating-year-genre .rating svg {
+    width: 30px;
+  }
+  .current-movie .movie-info .rating-year-genre .rating p,
+  .current-movie .movie-info .rating-year-genre .year {
+    font-size: 30px;
+  }
+  .current-movie .movie-info .rating-year-genre .genre p {
+    padding: 8px 15px;
+  }
+  .current-movie button p {
+    font-size: 20px;
+  }
+  .home-landing .top .input-btn input {
+    padding: 15px 15px;
+  }
 }
 @media screen and (min-width: 1750px) {
   .movie-section {
     grid-template-columns: repeat(7, 1fr);
+  }
+  .current-movie iframe {
+    width: 70%;
+  }
+  .current-movie .movie-info,
+  .current-movie .add-to {
+    margin-left: 15%;
+  }
+  .current-movie .movie-info .rating-year-genre .rating svg {
+    width: 28px;
+  }
+  .current-movie .movie-info .rating-year-genre .rating p,
+  .current-movie .movie-info .rating-year-genre .year {
+    font-size: 28px;
+  }
+  .current-movie .movie-info .rating-year-genre .genre p {
+    padding: 8px 15px;
   }
 }
