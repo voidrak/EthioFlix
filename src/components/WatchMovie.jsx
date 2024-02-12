@@ -24,6 +24,7 @@ const WatchMovie = ({ allFilm }) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
+      {currentMovie[0].amharicTitle}
     </div>
   ) : (
     <div>loading</div>

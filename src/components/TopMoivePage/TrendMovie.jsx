@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import filmData from "../../data/filmData";
+import { Link } from "react-router-dom";
 
 const TrendMovie = ({ allFilm }) => {
   const [trendMovie, setTrendMovie] = useState([]);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const filteredTrendMovie = filmData.filter((movie) => movie.trend === true);
@@ -28,10 +28,11 @@ const TrendMovie = ({ allFilm }) => {
           </div>
 
           <h1>{movie.amharicTitle}</h1>
-
-          <button>
-            <h2>WATCH NOW </h2>
-          </button>
+          <Link to={`${movie.id}`}>
+            <button>
+              <h2>WATCH NOW </h2>
+            </button>
+          </Link>
         </div>
       </div>
     );

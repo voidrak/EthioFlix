@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MainMovieList = ({ mainMovieList }) => {
   const mappedMainMovie = mainMovieList
@@ -27,7 +28,9 @@ const MainMovieList = ({ mainMovieList }) => {
           </div>
 
           <button>
-            <h2>WATCH NOW </h2>
+            <Link to={`${movie.id}`}>
+              <h2>WATCH NOW </h2>
+            </Link>
           </button>
         </div>
       </div>
