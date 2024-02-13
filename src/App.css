@@ -139,7 +139,7 @@ body {
   border-radius: 4px;
 }
 .aside-result-container .result-row .result-info .title {
-  font-size: 1rem;
+  font-size: 15px;
 }
 .aside-result-container .result-row .result-info .rating-duration-genre {
   display: flex;
@@ -903,6 +903,13 @@ body {
   }
   .search-result-container {
     width: 80%;
+  }
+  .shared-layout aside .svg-search input {
+    width: 250px;
+    padding: 10px 10px;
+    border: 2px solid var(--PRIMARY-COLOR);
+    border-radius: 25px;
+    outline: none;
   }
 }
 /* ---------------------------------------------------------------------- */
