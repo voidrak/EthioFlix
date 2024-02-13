@@ -734,6 +734,11 @@ body {
   display: flex;
   column-gap: 10px;
 }
+.search-result-container .result-row .result-info span {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 2px;
+}
 
 /* ------------------------MEDIA QUERY---------------------------------------- */
 
@@ -1216,6 +1221,8 @@ body {
     width: 70%;
   }
 }
+/* ---------------------------------------------------------- */
+
 @media screen and (min-width: 1314px) {
   .trend-section .trend-card:last-child {
     display: flex;
@@ -1249,7 +1256,19 @@ body {
   .search-result-container {
     width: 65%;
   }
+  .result-info .title {
+    font-size: 1.5rem;
+  }
+  .result-info .rating-duration-genre p {
+    font-size: 1.2rem;
+  }
+  .search-result-container .result-row .result-info span {
+    margin-top: 4px;
+  }
 }
+
+/* ---------------------------------------------------------------- */
+
 @media screen and (min-width: 1750px) {
   .movie-section {
     grid-template-columns: repeat(7, 1fr);
@@ -1276,5 +1295,8 @@ body {
   }
   .search-result-container {
     width: 60%;
+  }
+  .home-landing .top .input-btn input {
+    max-width: 730px;
   }
 }

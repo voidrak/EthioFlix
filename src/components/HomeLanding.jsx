@@ -5,15 +5,8 @@ import { debounce } from "lodash";
 const HomeLanding = ({ allFilm }) => {
   const [searchInput, setSearchInput] = useState("");
   const [searchResult, setSearchResult] = useState(allFilm);
-  // useEffect(() => {
-  //   const filteredList = allFilm.filter((movie) =>
-  //     movie.genre.includes("Thriller")
-  //   );
-  //   setTestList(filteredList);
-  // }, [allFilm]);
   const handleChange = debounce((e) => {
     setSearchInput(e.target.value);
-    console.log(searchInput);
   }, 400);
   return (
     <div className="home-landing">
@@ -41,8 +34,12 @@ const HomeLanding = ({ allFilm }) => {
                   : item.EnglishTitle.toLowerCase().includes(searchInput);
               })
               .map((movie) => (
-                <NavLink to={`home/${movie.id}`} style={{ color: "white" }}>
-                  <div className="result-row" key={movie.id}>
+                <NavLink
+                  to={`home/${movie.id}`}
+                  style={{ color: "white" }}
+                  key={movie.id}
+                >
+                  <div className="result-row">
                     <div
                       className="search-img"
                       style={{ backgroundImage: `url(${movie.image})` }}
@@ -50,8 +47,10 @@ const HomeLanding = ({ allFilm }) => {
                     <div className="result-info">
                       <h3 className="title">{movie.amharicTitle}</h3>
                       <div className="rating-duration-genre">
-                        <p className="year">{movie.releaseYear}</p> .
-                        <p className="duration">{movie.duration}</p> .
+                        <p className="year">{movie.releaseYear}</p>
+                        <span>&#729;</span>
+                        <p className="duration">{movie.duration}</p>
+                        <span>&#729;</span>
                         <p className="rating">{movie.rating}</p>
                       </div>
                     </div>
