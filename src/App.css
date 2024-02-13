@@ -692,6 +692,7 @@ body {
   align-items: center;
   column-gap: 4px;
   margin-top: 12px;
+  margin-left: 1rem;
 }
 .main-movie-card .card-info button svg {
   width: 10px;
@@ -1439,5 +1440,17 @@ body {
   .genre-btn button:last-child {
     font-size: 1.5rem;
     column-gap: 10px;
+  }
+  .main-movie-card .card-info button {
+    max-width: 200px;
+    height: 35px;
+  }
+  .main-movie-card .card-info button svg {
+    width: 10px;
+    fill: var(--WHITE-ACCENT);
+  }
+  .main-movie-card .card-info button h2 {
+    font-size: 15px;
+    color: var(--PRIMARY-COLOR);
   }
 }
