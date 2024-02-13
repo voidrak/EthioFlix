@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import SideNav from "./SideNav";
+import { Footer } from "./Footer";
 export const SharedLayout = ({
   handleSideBar,
   sideBar,
@@ -20,6 +21,7 @@ export const SharedLayout = ({
         SetAsideSearchInput={SetAsideSearchInput}
       />
       <Outlet />
+      <Footer />
     </div>
   );
 };
