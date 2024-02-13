@@ -12,7 +12,6 @@ const SideNav = ({
   const [asideSearchResult, setAsideSearchResult] = useState(allFilm);
   const handleChange = debounce((e) => {
     SetAsideSearchInput(e.target.value);
-    console.log(asideSearchInput);
   }, 400);
   return (
     <aside className={sideBar ? "active-aside" : "remove-aside"}>
@@ -50,7 +49,9 @@ const SideNav = ({
                     style={{ backgroundImage: `url(${movie.image})` }}
                   ></div>
                   <div className="result-info">
-                    <h3 className="title">{movie.amharicTitle}</h3>
+                    <h3 className="title">
+                      {movie.amharicTitle} | {movie.EnglishTitle}{" "}
+                    </h3>
                     <div className="rating-duration-genre">
                       <p className="year">{movie.releaseYear}</p>
                       <span>&#729;</span>

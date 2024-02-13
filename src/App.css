@@ -525,6 +525,7 @@ body {
   display: none;
 }
 .movie-filter-inner .by-year,
+.movie-filter-inner .by-rating,
 .movie-filter-inner .by-genre {
   display: flex;
   align-items: center;
@@ -578,13 +579,21 @@ body {
   left: 0;
   display: none;
 }
+.rating-btn {
+  position: absolute;
+  top: 60px;
+  left: 15px;
+  display: none;
+}
 .active-filter .year-btn,
+.active-filter .rating-btn,
 .active-filter .genre-btn {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   gap: 10px 12px;
 }
 .year-btn button,
+.rating-btn button,
 .genre-btn button {
   padding: 10px;
   border-radius: 7px;
@@ -882,10 +891,12 @@ body {
     height: 30px;
   }
   .year-btn,
+  .rating-btn,
   .genre-btn {
     top: 70px;
   }
   .active-filter .year-btn,
+  .active-filter .rating-btn,
   .active-filter .genre-btn {
     grid-template-columns: repeat(3, 120px);
     gap: 10px 12px;
@@ -1048,7 +1059,12 @@ body {
     top: 70px;
     left: 110px;
   }
+  .rating-btn {
+    top: 70px;
+    left: 150px;
+  }
   .active-filter .year-btn,
+  .active-filter .rating-btn,
   .active-filter .genre-btn {
     grid-template-columns: repeat(3, 120px);
     gap: 10px 12px;
