@@ -15,11 +15,11 @@ const Header = ({ handleSideBar }) => {
       <NavLink to="/">
         <img src="public\weblogo.png" alt="ethioflix logo" />
       </NavLink>
-      <input
+      {/* <input
         type="text"
         placeholder="Search Movies"
         className="header-search"
-      />
+      /> */}
 
       <div className="larger-screen-header">
         <ul>

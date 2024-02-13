@@ -7,7 +7,7 @@ const HomeLanding = ({ allFilm }) => {
   const [searchResult, setSearchResult] = useState(allFilm);
   const handleChange = debounce((e) => {
     setSearchInput(e.target.value);
-  }, 400);
+  }, 200);
   return (
     <div className="home-landing">
       <div className="top">

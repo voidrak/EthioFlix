@@ -11,7 +11,7 @@ export const SharedLayout = ({
 }) => {
   return (
     <div className="shared-layout">
-      <Header handleSideBar={handleSideBar} />
+      <Header handleSideBar={handleSideBar} allFilm={allFilm} />
       <SideNav
         handleSideBar={handleSideBar}
         sideBar={sideBar}

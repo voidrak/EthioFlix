@@ -75,6 +75,46 @@ body {
 .header .larger-screen-header ul li .link:hover {
   color: var(--PRIMARY-COLOR);
 }
+/* ------------------------------------------------------ */
+
+.header-result-container {
+  width: 90%;
+  background-color: var(--BG-COLOR);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  outline: 1px solid red;
+  z-index: 999999;
+}
+.header-result-container .result-row {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.header-result-container .result-row:hover {
+  background-color: var(--PRIMARY-COLOR);
+  color: var(--BLACK-COLOR);
+}
+.header-result-container .result-row .header-img {
+  width: 18%;
+  max-width: 100px;
+  aspect-ratio: 233/330;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
+.header-result-container .result-row .result-info .rating-duration-genre {
+  display: flex;
+  column-gap: 10px;
+}
+.header-result-container .result-row .result-info span {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 2px;
+}
+
+/* -------------------------------------------------------- */
 
 .active-aside {
   display: flex;
@@ -109,6 +149,7 @@ body {
   outline: none;
   margin-right: 10px;
 }
+
 /* ------------------------ */
 
 .aside-result-container {
@@ -144,9 +185,6 @@ body {
 .aside-result-container .result-row .result-info .rating-duration-genre {
   display: flex;
   column-gap: 10px;
-}
-.aside-result-container .result-row .result-info .rating-duration-genre p {
-  /* font-size: 12px; */
 }
 .aside-result-container .result-row .result-info span {
   font-size: 1.5rem;
@@ -1329,6 +1367,9 @@ body {
 /* ---------------------------------------------------------- */
 
 @media screen and (min-width: 1314px) {
+  .carousel-button-group svg {
+    width: 50px;
+  }
   .trend-section .trend-card:last-child {
     display: flex;
   }
@@ -1375,6 +1416,9 @@ body {
 /* ---------------------------------------------------------------- */
 
 @media screen and (min-width: 1750px) {
+  .carousel-button-group svg {
+    width: 60px;
+  }
   .movie-section {
     grid-template-columns: repeat(7, 1fr);
   }
@@ -1459,7 +1503,12 @@ body {
     font-size: 1rem;
   }
   .header .larger-screen-header ul li .link {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 600;
+  }
+}
+@media screen and (min-width: 2500px) {
+  .carousel-button-group svg {
+    width: 80px;
   }
 }
