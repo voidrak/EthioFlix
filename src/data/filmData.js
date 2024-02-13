@@ -420,7 +420,7 @@ const filmData = [
     amharicTitle: "እምዬ ጭሱ",
     EnglishTitle: "Emiye Chisu",
     releaseYear: 2019,
-    rating: 6.9,
+    rating: 7.3,
     duration: "1h 30m",
     genre: ["Drama", "Comedy"],
     src: "sXoAjDlaPkI",

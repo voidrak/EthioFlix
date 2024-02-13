@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { debounce } from "lodash";
 
-const SideNav = ({ handleSideBar, sideBar }) => {
+const SideNav = ({
+  handleSideBar,
+  sideBar,
+  allFilm,
+  asideSearchInput,
+  SetAsideSearchInput,
+}) => {
+  const [asideSearchResult, setAsideSearchResult] = useState(allFilm);
+  const handleChange = debounce((e) => {
+    SetAsideSearchInput(e.target.value);
+    console.log(asideSearchInput);
+  }, 400);
   return (
     <aside className={sideBar ? "active-aside" : "remove-aside"}>
       <div className="svg-search">
@@ -11,7 +24,44 @@ const SideNav = ({ handleSideBar, sideBar }) => {
         >
           <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
         </svg>
-        <input type="text" placeholder="Search Movies" />
+        <input
+          type="text"
+          placeholder="Search Movies"
+          onChange={(e) => handleChange(e)}
+        />
+      </div>
+      <div className="aside-result-container">
+        {asideSearchResult &&
+          asideSearchResult
+            .filter((item) => {
+              return asideSearchInput.toLowerCase() === ""
+                ? null
+                : item.EnglishTitle.toLowerCase().includes(asideSearchInput);
+            })
+            .map((movie) => (
+              <NavLink
+                to={`home/${movie.id}`}
+                style={{ color: "white" }}
+                key={movie.id}
+              >
+                <div className="result-row" onClick={handleSideBar}>
+                  <div
+                    className="search-img"
+                    style={{ backgroundImage: `url(${movie.image})` }}
+                  ></div>
+                  <div className="result-info">
+                    <h3 className="title">{movie.amharicTitle}</h3>
+                    <div className="rating-duration-genre">
+                      <p className="year">{movie.releaseYear}</p>
+                      <span>&#729;</span>
+                      <p className="duration">{movie.duration}</p>
+                      <span>&#729;</span>
+                      <p className="rating">{movie.rating}</p>
+                    </div>
+                  </div>
+                </div>
+              </NavLink>
+            ))}
       </div>
       <div className="side-navbar">
         <ul>

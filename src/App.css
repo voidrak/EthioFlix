@@ -109,6 +109,51 @@ body {
   outline: none;
   margin-right: 10px;
 }
+/* ------------------------ */
+
+.aside-result-container {
+  width: 90%;
+  background-color: var(--BLACK-COLOR);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding-top: 1rem;
+  margin-left: 10px;
+}
+.aside-result-container .result-row {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.aside-result-container .result-row:hover {
+  background-color: var(--PRIMARY-COLOR);
+  color: var(--BLACK-COLOR);
+}
+.aside-result-container .result-row .search-img {
+  width: 18%;
+  max-width: 100px;
+  aspect-ratio: 233/330;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
+.aside-result-container .result-row .result-info .title {
+  font-size: 1rem;
+}
+.aside-result-container .result-row .result-info .rating-duration-genre {
+  display: flex;
+  column-gap: 10px;
+}
+.aside-result-container .result-row .result-info .rating-duration-genre p {
+  /* font-size: 12px; */
+}
+.aside-result-container .result-row .result-info span {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 2px;
+}
+/* ---------------------------- */
 .shared-layout aside .side-navbar ul {
   display: flex;
   flex-direction: column;

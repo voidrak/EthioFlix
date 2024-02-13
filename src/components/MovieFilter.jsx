@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import MainMovieList from "./TopMoivePage/MainMovieList";
 
-const MovieFilter = ({ allFilm, setMainMovieList, mainMovieList }) => {
+const MovieFilter = ({ allFilm, setMainMovieList }) => {
   const [activeSearch, setActiveSearch] = useState(false);
   const [activeFilter, setActiveFilter] = useState("");
 

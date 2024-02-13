@@ -12,8 +12,11 @@ const App = () => {
   const [sideBar, setSideBar] = useState(false);
   const [allFilm, setAllFilm] = useState(filmData);
   const [mainMovieList, setMainMovieList] = useState(allFilm);
+  const [asideSearchInput, SetAsideSearchInput] = useState("");
+
   function handleSideBar() {
     setSideBar((prev) => !prev);
+    SetAsideSearchInput("");
   }
   return (
     <BrowserRouter>
@@ -21,7 +24,13 @@ const App = () => {
         <Route
           path="/"
           element={
-            <SharedLayout handleSideBar={handleSideBar} sideBar={sideBar} />
+            <SharedLayout
+              handleSideBar={handleSideBar}
+              sideBar={sideBar}
+              allFilm={allFilm}
+              asideSearchInput={asideSearchInput}
+              SetAsideSearchInput={SetAsideSearchInput}
+            />
           }
         >
           <Route
