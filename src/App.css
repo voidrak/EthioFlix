@@ -541,7 +541,7 @@ body {
   fill: var(--WHITE-ACCENT);
   width: 15px;
 }
-.mobile-search {
+/* .mobile-search {
   background-color: var(--WHITE-ACCENT);
   border-radius: 9px;
   width: 70px;
@@ -556,10 +556,10 @@ body {
   border-radius: 9px;
   padding-left: 20px;
   font-size: 1rem;
-}
-.mobile-search svg {
+} */
+/* .mobile-search svg {
   fill: var(--BLACK-COLOR);
-}
+} */
 .active-search {
   width: 90%;
   height: 30px;
@@ -585,12 +585,25 @@ body {
   left: 15px;
   display: none;
 }
+.rating-btn button:not(:last-child) {
+  font-size: 1rem;
+  font-weight: 700;
+  column-gap: 10px;
+}
+.rating-btn button span {
+  margin-right: 5px;
+}
+
 .active-filter .year-btn,
-.active-filter .rating-btn,
 .active-filter .genre-btn {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   gap: 10px 12px;
+}
+.active-filter .rating-btn {
+  display: grid;
+  gap: 10px 12px;
+  grid-template-columns: repeat(2, 120px);
 }
 .year-btn button,
 .rating-btn button,
@@ -895,12 +908,6 @@ body {
   .genre-btn {
     top: 70px;
   }
-  .active-filter .year-btn,
-  .active-filter .rating-btn,
-  .active-filter .genre-btn {
-    grid-template-columns: repeat(3, 120px);
-    gap: 10px 12px;
-  }
 }
 
 /* ................................................. */
@@ -921,6 +928,30 @@ body {
     border: 2px solid var(--PRIMARY-COLOR);
     border-radius: 25px;
     outline: none;
+  }
+  .year-btn {
+    top: 70px;
+    left: 60px;
+  }
+  .genre-btn {
+    top: 70px;
+    left: 60px;
+  }
+  .rating-btn {
+    top: 70px;
+    left: 90px;
+  }
+
+  .year-btn button {
+    padding: 12px;
+  }
+  .active-filter .genre-btn button {
+    padding: 15px;
+  }
+  .year-btn button:hover,
+  .genre-btn button:hover {
+    transform: scale(1.1);
+    border: 5px solid aquamarine;
   }
 }
 /* ---------------------------------------------------------------------- */
@@ -1053,18 +1084,17 @@ body {
   }
   .year-btn {
     top: 70px;
-    left: 50px;
+    left: 80px;
   }
   .genre-btn {
     top: 70px;
-    left: 110px;
+    left: 190px;
   }
   .rating-btn {
     top: 70px;
-    left: 150px;
+    left: 390px;
   }
   .active-filter .year-btn,
-  .active-filter .rating-btn,
   .active-filter .genre-btn {
     grid-template-columns: repeat(3, 120px);
     gap: 10px 12px;
@@ -1195,6 +1225,12 @@ body {
     font-size: 18px;
     padding: 12px 10px;
     font-size: 18px;
+  }
+  .year-btn button:not(:last-child),
+  .genre-btn button:not(:last-child) {
+    font-size: 1rem;
+    font-weight: 700;
+    column-gap: 10px;
   }
 }
 
@@ -1366,5 +1402,42 @@ body {
   }
   .home-landing .top .input-btn input {
     max-width: 730px;
+  }
+  .movie-filter-inner {
+    margin-top: 2rem;
+    max-width: 800px;
+    height: 80px;
+  }
+  .movie-filter-inner p {
+    font-size: 25px;
+  }
+
+  .filter-tags {
+    column-gap: 25px;
+  }
+
+  .active-filter .year-btn,
+  .active-filter .genre-btn {
+    grid-template-columns: repeat(3, 180px);
+  }
+  .active-filter .rating-btn {
+    grid-template-columns: repeat(2, 150px);
+  }
+  .genre-btn {
+    top: 70px;
+    left: 100px;
+  }
+
+  .rating-btn button:not(:last-child),
+  .year-btn button:not(:last-child),
+  .genre-btn button:not(:last-child) {
+    font-size: 1.5rem;
+    column-gap: 10px;
+  }
+  .rating-btn button:last-child,
+  .year-btn button:last-child,
+  .genre-btn button:last-child {
+    font-size: 1.5rem;
+    column-gap: 10px;
   }
 }

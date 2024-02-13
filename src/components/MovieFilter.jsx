@@ -39,10 +39,12 @@ const MovieFilter = ({ allFilm, setMainMovieList }) => {
 
     setMainMovieList(filteredMovie);
   }
-  function handleRating(event, rating) {
+  function handleRating(event, MinRating, MaxRating) {
     event.stopPropagation();
     setActiveFilter("false");
-    const filteredMovie = allFilm.filter((movie) => movie.rating === rating);
+    const filteredMovie = allFilm.filter(
+      (movie) => MinRating <= movie.rating && movie.rating < MaxRating
+    );
 
     setMainMovieList(filteredMovie);
   }
@@ -141,14 +143,32 @@ const MovieFilter = ({ allFilm, setMainMovieList }) => {
               <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
             </svg>
             <div className="rating-btn">
-              {filterRating.map((rating) => (
+              {/* {filterRating.map((rating) => (
                 <button
                   key={rating}
                   onClick={(event) => handleRating(event, rating)}
                 >
                   {rating}
                 </button>
-              ))}
+              ))} */}
+              <button onClick={(event) => handleRating(event, 6.5, 7.0)}>
+                <span>&#8805;</span>6.5
+              </button>
+              <button onClick={(event) => handleRating(event, 7.0, 7.5)}>
+                <span>&#8805;</span>7.0
+              </button>
+              <button onClick={(event) => handleRating(event, 7.5, 8.0)}>
+                <span>&#8805;</span>7.5
+              </button>
+              <button onClick={(event) => handleRating(event, 8.0, 8.5)}>
+                <span>&#8805;</span>8.0
+              </button>
+              <button onClick={(event) => handleRating(event, 8.5, 9.0)}>
+                <span>&#8805;</span>8.5
+              </button>
+              <button onClick={(event) => handleRating(event, 9.5, 9.9)}>
+                <span>&#8805;</span>8.5
+              </button>
               <button
                 className="close"
                 onClick={(event) => {
