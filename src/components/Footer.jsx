@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -16,14 +17,65 @@ export const Footer = () => {
       <div className="right-side-container">
         <div className="links-btn">
           <ul className="footer-links">
-            <li>Home</li>
-            <li>Site Map</li>
-            <li>DMCA</li>
-            <li>Privacy </li>
-            <li>FAQ</li>
-            <li>About Us</li>
+            <NavLink to="/" style={{ color: "var(--WHITE-ACCENT" }}>
+              <li>Home</li>
+            </NavLink>
+            <li>
+              <a
+                href="https://github.com/voidrak"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Site Map
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/voidrak"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                DMCA
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/voidrak"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Privacy
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/voidrak"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/voidrak"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                About Us
+              </a>
+            </li>
           </ul>
-          <button>Contact Us</button>
+
+          <button>
+            <a
+              href="https://github.com/voidrak"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CONTACT US
+            </a>
+          </button>
         </div>
         <div className="footer-social">
           <ul>

@@ -1,19 +1,22 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import MainMovieList from "./TopMoivePage/MainMovieList";
+import { useNavigate, NavLink } from "react-router-dom";
+import { debounce } from "lodash";
 
 const MovieFilter = ({ allFilm, setMainMovieList }) => {
   const [activeSearch, setActiveSearch] = useState(false);
   const [activeFilter, setActiveFilter] = useState("");
+  const [MainSearchInput, setMainSearchInput] = useState("");
+  const [MainSearchResult, setMainSearchResult] = useState(allFilm);
+  const handleChange = debounce((e) => {
+    setMainSearchInput(e.target.value);
+    console.log(MainSearchInput);
+  }, 200);
 
   const filterYear = [...new Set(allFilm.map((val) => val.releaseYear))].sort(
     (a, b) => a - b
   );
 
   const filterGenre = [...new Set(allFilm.map((val) => val.genre[0]))];
-  const filterRating = [...new Set(allFilm.map((val) => val.rating))].sort(
-    (a, b) => b - a
-  );
 
   const navigate = useNavigate();
   function handleSearch() {
@@ -54,7 +57,7 @@ const MovieFilter = ({ allFilm, setMainMovieList }) => {
       setActiveSearch(false);
       console.log("key down");
       event.preventDefault;
-      navigate("/");
+      // navigate("/");
     }
   };
 
@@ -166,8 +169,8 @@ const MovieFilter = ({ allFilm, setMainMovieList }) => {
               <button onClick={(event) => handleRating(event, 8.5, 9.0)}>
                 <span>&#8805;</span>8.5
               </button>
-              <button onClick={(event) => handleRating(event, 9.5, 9.9)}>
-                <span>&#8805;</span>8.5
+              <button onClick={(event) => handleRating(event, 9.0, 9.9)}>
+                <span>&#8805;</span>9.0
               </button>
               <button
                 className="close"
@@ -181,7 +184,7 @@ const MovieFilter = ({ allFilm, setMainMovieList }) => {
             </div>
           </div>
         </div>
-        {/* <div
+        <div
           className={`mobile-search ${activeSearch ? "active-search" : ""}`}
           onClick={() => {
             handleSearch();
@@ -192,7 +195,39 @@ const MovieFilter = ({ allFilm, setMainMovieList }) => {
             <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
           </svg>
           <input type="text" />
-        </div> */}
+        </div>
+      </div>
+
+      <div className="search-result-container">
+        {MainSearchResult &&
+          MainSearchResult.filter((item) => {
+            return MainSearchInput.toLowerCase() === ""
+              ? null
+              : item.EnglishTitle.toLowerCase().includes(MainSearchInput);
+          }).map((movie) => (
+            <NavLink
+              to={`home/${movie.id}`}
+              style={{ color: "white" }}
+              key={movie.id}
+            >
+              <div className="result-row">
+                <div
+                  className="search-img"
+                  style={{ backgroundImage: `url(${movie.image})` }}
+                ></div>
+                <div className="result-info">
+                  <h3 className="title">{movie.amharicTitle}</h3>
+                  <div className="rating-duration-genre">
+                    <p className="year">{movie.releaseYear}</p>
+                    <span>&#729;</span>
+                    <p className="duration">{movie.duration}</p>
+                    <span>&#729;</span>
+                    <p className="rating">{movie.rating}</p>
+                  </div>
+                </div>
+              </div>
+            </NavLink>
+          ))}
       </div>
     </div>
   );
