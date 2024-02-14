@@ -21,7 +21,7 @@ export const Footer = () => {
             <li>DMCA</li>
             <li>Privacy </li>
             <li>FAQ</li>
-            <li>Services</li>
+            <li>About Us</li>
           </ul>
           <button>Contact Us</button>
         </div>
@@ -56,6 +56,10 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
+        {/* <div className="rak-logo">
+          <h4>Powered by </h4>
+          <img src="/rak-logo.png" alt="rak logo" />
+        </div> */}
       </div>
     </div>
   );

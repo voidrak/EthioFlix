@@ -846,9 +846,13 @@ body {
   margin-top: 2px;
 }
 .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1rem 0 1rem 10px;
+  padding: 1.2rem 0 1rem 10px;
   background: var(--BLACK-COLOR);
 }
 .footer .logo-copyright {
@@ -858,14 +862,20 @@ body {
   justify-content: space-between;
   margin: 10px 15px 5px 5px;
 }
+.footer .logo-copyright img {
+  width: 80px;
+}
 .footer .logo-copyright .copyright {
   text-align: center;
+  margin-top: 10px;
 }
 .footer .logo-copyright h1 {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
 }
 .footer .logo-copyright h3 {
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 400;
   color: var(--PRIMARY-COLOR);
 }
 .footer .right-side-container .links-btn {
@@ -885,10 +895,11 @@ body {
 }
 .footer .right-side-container .links-btn .footer-links li {
   padding-left: 5px;
+  font-size: 15px;
   border-left: 2px solid var(--PRIMARY-COLOR);
 }
 .footer .right-side-container .links-btn button {
-  background-color: #ff9a83;
+  background-color: #9be4af;
   height: 30px;
   border-radius: 3px;
   padding: 5px 10px;
@@ -898,8 +909,9 @@ body {
 }
 
 .footer .logo-copyright img {
-  width: 90px;
+  width: 80px;
 }
+
 .footer .footer-social ul {
   margin-top: 1rem;
   list-style-type: none;
@@ -909,8 +921,11 @@ body {
   align-items: center;
 }
 .footer .footer-social svg {
-  width: 25px;
+  width: 20px;
   fill: var(--PRIMARY-COLOR);
+}
+.footer .rak-logo {
+  display: none;
 }
 
 /* ------------------------MEDIA QUERY---------------------------------------- */
@@ -1072,7 +1087,7 @@ body {
     margin: 10px 30px 5px 15px;
   }
   .footer .logo-copyright .copyright {
-    margin-top: 15px;
+    margin-top: 25px;
   }
 
   .footer .right-side-container .links-btn .footer-links {
@@ -1263,6 +1278,53 @@ body {
     font-size: 15px;
     column-gap: 0.5rem;
   }
+  .footer {
+    flex-direction: row;
+    column-gap: 5rem;
+    justify-content: space-evenly;
+    padding: 2rem 0 1rem 10px;
+  }
+  .footer .logo-copyright {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+    margin: 20px 15px 5px 5px;
+  }
+  .footer .logo-copyright .copyright {
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  .footer .logo-copyright img {
+    width: 80px;
+    margin-right: 30px;
+  }
+  .footer .logo-copyright h1,
+  .footer .logo-copyright h3 {
+    margin-left: 10px;
+  }
+
+  .footer .right-side-container .links-btn {
+    justify-content: space-between;
+    column-gap: 4rem;
+  }
+  .footer .footer-social ul {
+    justify-content: flex-end;
+    column-gap: 15px;
+    margin-right: 18px;
+  }
+  /* .footer .rak-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 2rem;
+    margin-left: 8vw;
+  }
+  .footer .rak-logo img {
+    width: 60px;
+  } */
 }
 
 /* ---------------------------------------------------------------------- */
