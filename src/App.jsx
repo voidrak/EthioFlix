@@ -8,6 +8,7 @@ import { HomePage } from "./pages/HomePage";
 import MoviePage from "./pages/MoviePage";
 import WatchMoviePage from "./pages/WatchMoviePage";
 import { ErrorPage } from "./pages/ErrorPage";
+import Contact from "./pages/Contact";
 const App = () => {
   const [sideBar, setSideBar] = useState(false);
   const [allFilm, setAllFilm] = useState(filmData);
@@ -57,6 +58,7 @@ const App = () => {
             path="home/:currentMovieId"
             element={<WatchMoviePage allFilm={allFilm} />}
           />
+          <Route path="contact" element={<Contact />} />
         </Route>
         <Route path="*" element={<ErrorPage />} />
       </Routes>
