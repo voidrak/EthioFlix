@@ -1,5 +1,4 @@
 import React from "react";
-import Carousel from "react-multi-carousel";
 const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
   const {
     carouselState: { currentSlide },

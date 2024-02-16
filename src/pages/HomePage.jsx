@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import SideNav from "../components/SideNav";
+import React from "react";
 import HomeLanding from "../components/HomeLanding";
 export const HomePage = ({ allFilm }) => {
   return (
