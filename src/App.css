@@ -1116,6 +1116,12 @@ body {
 .privacy strong {
   color: var(--PRIMARY-COLOR);
 }
+.grid-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+}
 
 /* ------------------------MEDIA QUERY---------------------------------------- */
 

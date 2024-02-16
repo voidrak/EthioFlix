@@ -2,21 +2,16 @@ import React, { useState, useEffect } from "react";
 import TopMoviePage from "../components/TopMoivePage/TopMoviePage";
 import MovieFIlter from "../components/MovieFilter";
 import MainMovieList from "../components/TopMoivePage/MainMovieList";
+import { Grid } from "react-loader-spinner";
 const MoviePage = ({ allFilm, setMainMovieList, mainMovieList }) => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
-  // useEffect(() => {
-  //   const backgroundImage = new Image();
-  //   backgroundImage.src = "thumbnails/Manyazewal.jpg";
-  //   backgroundImage.onload = () => {
-  //     setImagesLoaded(true);
-  //   };
-  // }, []);
-
   useEffect(() => {
-    setTimeout(() => {
+    const backgroundImage = new Image();
+    backgroundImage.src = "thumbnails/Manyazewal.jpg";
+    backgroundImage.onload = () => {
       setImagesLoaded(true);
-    }, 5000);
+    };
   }, []);
 
   return (
@@ -33,9 +28,16 @@ const MoviePage = ({ allFilm, setMainMovieList, mainMovieList }) => {
         </>
       )}
       {!imagesLoaded && (
-        <div className="loading">
-          <h1>LOADING</h1>
-        </div>
+        <Grid
+          visible={true}
+          height="250"
+          width="250"
+          color="#4fa94d"
+          ariaLabel="grid-loading"
+          radius="12.5"
+          wrapperStyle={{}}
+          wrapperClass="grid-wrapper"
+        />
       )}
     </div>
   );
