@@ -11,6 +11,9 @@
   --GRAY-SHADE: #5f6881;
   --BLACK-COLOR: #000000;
 }
+.hidden {
+  display: none;
+}
 
 a:any-link {
   text-decoration: none;

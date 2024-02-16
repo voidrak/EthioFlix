@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ButtonGroup from "./../ButtonGroup";
 import { Link } from "react-router-dom";
-export const MovieSlider = ({ allFilm }) => {
+export const MovieSlider = ({ allFilm, setImagesLoaded }) => {
   const [sliderMovie, setSliderMovie] = useState([]);
 
   useEffect(() => {
