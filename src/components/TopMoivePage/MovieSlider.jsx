@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "../../app.css";
 import ButtonGroup from "./../ButtonGroup";
 import { Link } from "react-router-dom";
 export const MovieSlider = ({ allFilm }) => {

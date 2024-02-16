@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { debounce } from "lodash";
 
 const Header = ({ handleSideBar }) => {
   return (
