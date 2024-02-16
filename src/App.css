@@ -246,14 +246,14 @@ body {
   width: 30px;
   fill: var(--PRIMARY-COLOR);
 }
-.home-landing .BG {
+.home-landing {
   background-image: url("./assets/images/other/header-background.jpg");
   background-size: cover;
   background-position: top;
+  border-radius: 35px 35px 0 0;
 }
 .home-landing .top {
   margin-top: 2rem;
-  border-radius: 25px 25px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
