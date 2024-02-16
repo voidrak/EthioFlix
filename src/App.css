@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
-  /* overflow-x: hidden; */
 }
 
 :root {
@@ -432,7 +430,7 @@ body {
 .carousel-button-group button {
   background: transparent;
   border: none;
-  /* outline: 1px solid red; */
+
   /* padding: 1rem; */
 }
 .carousel-button-group svg {
@@ -1032,7 +1030,6 @@ body {
   margin-top: 2rem;
   /* row-gap: 2rem; */
   margin-bottom: 5rem;
-  /* outline: 1px solid red; */
 }
 .contact-page .image-info .contact-info {
   display: flex;
@@ -1050,7 +1047,6 @@ body {
   column-gap: 10px;
   align-items: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* outline: 1px solid red; */
 }
 .contact-page .image-info svg {
   width: 18px;
@@ -1865,8 +1861,6 @@ body {
   .contact-page .image-info .contact-info {
     transform: translateY(-10px);
     margin-left: 5rem;
-  }
-  .contact-page img {
   }
 }
 /* ---------------------------------------------------------- */
