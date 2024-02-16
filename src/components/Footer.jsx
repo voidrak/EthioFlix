@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="logo-copyright">
-        <img src="public\weblogo.png" alt="ethioflix logo" />
+        <img src="/weblogo.png" alt="ethioflix logo" />
         <div className="copyright">
           <h1>
             Copyright <span>&#64;</span>2024{" "}

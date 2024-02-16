@@ -20,10 +20,7 @@ const Contact = () => {
           </form>
         </div>
         <div className="image-info">
-          <img
-            src="src\assets\images\other\contact-us.png"
-            alt="contact image"
-          />
+          <img src="/contact-us.png" alt="contact image" />
           <div className="contact-info">
             <a
               href="https://maps.app.goo.gl/T2yueoenHBKqwFSc9"
