@@ -42,7 +42,7 @@ const Header = ({ handleSideBar }) => {
           </li>
           <li>
             <NavLink
-              to="contactus"
+              to="contact"
               className={({ isActive }) => (isActive ? "link " : "link")}
             >
               CONTACT US

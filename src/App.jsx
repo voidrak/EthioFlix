@@ -9,6 +9,8 @@ import MoviePage from "./pages/MoviePage";
 import WatchMoviePage from "./pages/WatchMoviePage";
 import { ErrorPage } from "./pages/ErrorPage";
 import Contact from "./pages/Contact";
+import DmcaPage from "./pages/DmcaPage";
+import PrivacyPage from "./pages/PrivacyPage";
 const App = () => {
   const [sideBar, setSideBar] = useState(false);
   const [allFilm, setAllFilm] = useState(filmData);
@@ -59,6 +61,8 @@ const App = () => {
             element={<WatchMoviePage allFilm={allFilm} />}
           />
           <Route path="contact" element={<Contact />} />
+          <Route path="dmca" element={<DmcaPage />} />
+          <Route path="privacy" element={<PrivacyPage />} />
         </Route>
         <Route path="*" element={<ErrorPage />} />
       </Routes>

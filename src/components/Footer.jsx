@@ -21,40 +21,16 @@ export const Footer = () => {
               <li>Home</li>
             </NavLink>
             <li>
-              <a
-                href="https://github.com/voidrak"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Site Map
-              </a>
+              <a href="#">Site Map</a>
             </li>
+            <NavLink to="/dmca" style={{ color: "var(--WHITE-ACCENT" }}>
+              <li>DMCA</li>
+            </NavLink>
+            <NavLink to="/privacy" style={{ color: "var(--WHITE-ACCENT" }}>
+              <li>Privacy</li>
+            </NavLink>
             <li>
-              <a
-                href="https://github.com/voidrak"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                DMCA
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/voidrak"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Privacy
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/voidrak"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                FAQ
-              </a>
+              <a href=" #">FAQ</a>
             </li>
             <li>
               <a
@@ -66,16 +42,9 @@ export const Footer = () => {
               </a>
             </li>
           </ul>
-
-          <button>
-            <a
-              href="https://github.com/voidrak"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              CONTACT US
-            </a>
-          </button>
+          <NavLink to="/contact">
+            <button>CONTACT US</button>
+          </NavLink>
         </div>
         <div className="footer-social">
           <ul>

@@ -114,7 +114,7 @@ const HomeLanding = ({ allFilm }) => {
             Why EthioFlix should be your movies streaming site?
           </h1>
           <div>
-            <h3>1. Ev01 provides you with a Safety streaming service</h3>
+            <h3>1. EthioFlix provides you with a Safety streaming service</h3>
             There are thousands of free online movie streaming sites on the
             Internet but only a few of them are safe and reliable. How to weed
             out the bad, you might ask. Safe and reliable sites often don't
@@ -126,8 +126,8 @@ const HomeLanding = ({ allFilm }) => {
           </div>
           <div>
             <h3>
-              2. Minimal UI design from Ev01 makes it easier to stream on Mobile
-              and Tablet
+              2. Minimal UI design from EthioFlix makes it easier to stream on
+              Mobile and Tablet
             </h3>
             We understand how important a well-organized and clean look matters
             to our users. People come to EthioFlix for entertainment, not hassle
@@ -149,7 +149,8 @@ const HomeLanding = ({ allFilm }) => {
           </div>
           <div>
             <h3>
-              4. Ev01 gives better Streaming experience than any other service
+              4. EthioFlix gives better Streaming experience than any other
+              service
             </h3>
             Everything becomes possible at EthioFlix. Here you can enjoy a
             premium watching experience at no cost. You can stream movies and TV
@@ -159,7 +160,7 @@ const HomeLanding = ({ allFilm }) => {
             middle.
           </div>
           <div>
-            <h3>5. Device compatibility is what Ev01 focus on</h3>
+            <h3>5. Device compatibility is what EthioFlix focus on</h3>
             EthioFlix app is available for Android devices. As the site is both
             mobile-friendly and Chromecast supported, you can stream its content
             on any device, be it smartphone or big screen TV, at any time and
