@@ -191,7 +191,7 @@ const filmData = [
     src: "u4n1bBSWPHY",
     image: "thumbnails/YefikerSew.jpeg",
     isSlider: false,
-    trend: false,
+    trend: true,
     id: "rx9q1a3",
   },
   {
@@ -882,7 +882,7 @@ const filmData = [
     src: "qC_yL8wkIFU",
     image: "thumbnails/MadamQeberign.jpg",
     isSlider: false,
-    trend: true,
+    trend: false,
     id: "BLFjZiy",
   },
 
