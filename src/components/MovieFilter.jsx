@@ -7,9 +7,9 @@ const MovieFilter = ({ allFilm, setMainMovieList }) => {
   const [activeFilter, setActiveFilter] = useState("");
   const [MainSearchInput, setMainSearchInput] = useState("");
   const [MainSearchResult, setMainSearchResult] = useState(allFilm);
-  const handleChange = debounce((e) => {
+  const handleChange = (e) => {
     setMainSearchInput(e.target.value);
-  }, 200);
+  };
 
   const filterYear = [...new Set(allFilm.map((val) => val.releaseYear))].sort(
     (a, b) => a - b

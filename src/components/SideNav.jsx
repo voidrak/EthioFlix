@@ -10,9 +10,9 @@ const SideNav = ({
   SetAsideSearchInput,
 }) => {
   const [asideSearchResult, setAsideSearchResult] = useState(allFilm);
-  const handleChange = debounce((e) => {
+  const handleChange = (e) => {
     SetAsideSearchInput(e.target.value);
-  }, 200);
+  };
   return (
     <aside className={sideBar ? "active-aside" : "remove-aside"}>
       <div className="svg-search">

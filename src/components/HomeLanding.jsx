@@ -5,9 +5,9 @@ import { debounce } from "lodash";
 const HomeLanding = ({ allFilm }) => {
   const [searchInput, setSearchInput] = useState("");
   const [searchResult, setSearchResult] = useState(allFilm);
-  const handleChange = debounce((e) => {
+  const handleChange = (e) => {
     setSearchInput(e.target.value);
-  }, 200);
+  };
   return (
     <div className="home-landing">
       <div className="BG">
