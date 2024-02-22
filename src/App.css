@@ -488,9 +488,12 @@ body {
   column-gap: 1rem;
   justify-content: center;
 }
-
-.trend-card img {
+.trend-card .image {
   width: 90px;
+}
+
+.trend-card .image img {
+  width: 100%;
   border-radius: 10px;
 }
 .trend-card .card-info {
@@ -1183,7 +1186,7 @@ body {
     font-size: clamp(2.2rem, 6.4vw, 4rem);
   }
   .trend-card img {
-    width: 90px;
+    width: 100%;
   }
   .trend-card .card-info h1 {
     font-size: clamp(14px, 3.4vw, 25px);
@@ -1693,8 +1696,11 @@ body {
     display: flex;
     column-gap: 10px;
   }
+  .trend-card .image {
+    width: 80px;
+  }
   .trend-card img {
-    width: 90px;
+    width: 100%;
   }
   .movie-filter-inner {
     margin-top: 2rem;
@@ -1810,7 +1816,7 @@ body {
     font-size: 1.5rem;
   }
   .trend-card img {
-    width: 90px;
+    width: 100%;
   }
   .top-movie-card {
     height: 85vh;
@@ -1895,6 +1901,10 @@ body {
 
   .movie-section {
     grid-template-columns: repeat(6, 1fr);
+  }
+  .main-movie {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .current-movie iframe {
     width: 75%;
