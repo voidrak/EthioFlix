@@ -18,7 +18,7 @@ const App = () => {
   const [asideSearchInput, SetAsideSearchInput] = useState("");
 
   function handleSideBar() {
-    setSideBar((prev) => !prev);
+    setSideBar(!sideBar);
     SetAsideSearchInput("");
   }
   return (
@@ -30,22 +30,14 @@ const App = () => {
             <SharedLayout
               handleSideBar={handleSideBar}
               sideBar={sideBar}
+              setSideBar={setSideBar}
               allFilm={allFilm}
               asideSearchInput={asideSearchInput}
               SetAsideSearchInput={SetAsideSearchInput}
             />
           }
         >
-          <Route
-            index
-            element={
-              <HomePage
-                handleSideBar={handleSideBar}
-                sideBar={sideBar}
-                allFilm={allFilm}
-              />
-            }
-          />
+          <Route index element={<HomePage allFilm={allFilm} />} />
           <Route
             path="home"
             element={

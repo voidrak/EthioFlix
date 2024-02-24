@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { debounce } from "lodash";
 
 const SideNav = ({
   handleSideBar,
@@ -10,11 +9,16 @@ const SideNav = ({
   SetAsideSearchInput,
 }) => {
   const [asideSearchResult, setAsideSearchResult] = useState(allFilm);
+  const sidebarRef = useRef(null);
   const handleChange = (e) => {
     SetAsideSearchInput(e.target.value);
   };
+
   return (
-    <aside className={sideBar ? "active-aside" : "remove-aside"}>
+    <aside
+      className={sideBar ? "active-aside" : "remove-aside"}
+      // ref={sidebarRef}
+    >
       <div className="svg-search">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +114,13 @@ const SideNav = ({
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
               </svg>
-              About
+              <a
+                href="https://github.com/voidrak"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                About Us
+              </a>
             </button>
           </li>
         </ul>

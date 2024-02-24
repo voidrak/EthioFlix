@@ -17,6 +17,7 @@
 
 a:any-link {
   text-decoration: none;
+  color: inherit;
 }
 button {
   cursor: pointer;
