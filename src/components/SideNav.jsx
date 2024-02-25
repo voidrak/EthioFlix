@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const SideNav = ({
@@ -8,11 +8,15 @@ const SideNav = ({
   asideSearchInput,
   SetAsideSearchInput,
 }) => {
-  const [asideSearchResult, setAsideSearchResult] = useState(allFilm);
-  const sidebarRef = useRef(null);
-  const handleChange = (e) => {
-    SetAsideSearchInput(e.target.value);
-  };
+  const asideSearchResult = useMemo(() => {
+    if (asideSearchInput) {
+      return allFilm.filter((item) => {
+        return asideSearchInput.toLowerCase() === ""
+          ? null
+          : item.EnglishTitle.toLowerCase().includes(asideSearchInput);
+      });
+    }
+  }, [allFilm, asideSearchInput]);
 
   return (
     <aside
@@ -30,43 +34,38 @@ const SideNav = ({
         <input
           type="text"
           placeholder="Search Movies"
-          onChange={(e) => handleChange(e)}
+          value={asideSearchInput}
+          onChange={(e) => SetAsideSearchInput(e.target.value)}
         />
       </div>
       <div className="aside-result-container">
         {asideSearchResult &&
-          asideSearchResult
-            .filter((item) => {
-              return asideSearchInput.toLowerCase() === ""
-                ? null
-                : item.EnglishTitle.toLowerCase().includes(asideSearchInput);
-            })
-            .map((movie) => (
-              <NavLink
-                to={`home/${movie.id}`}
-                style={{ color: "white" }}
-                key={movie.id}
-              >
-                <div className="result-row" onClick={handleSideBar}>
-                  <div
-                    className="search-img"
-                    style={{ backgroundImage: `url(${movie.image})` }}
-                  ></div>
-                  <div className="result-info">
-                    <h3 className="title">
-                      {movie.amharicTitle} | {movie.EnglishTitle}{" "}
-                    </h3>
-                    <div className="rating-duration-genre">
-                      <p className="year">{movie.releaseYear}</p>
-                      <span>&#729;</span>
-                      <p className="duration">{movie.duration}</p>
-                      <span>&#729;</span>
-                      <p className="rating">{movie.rating}</p>
-                    </div>
+          asideSearchResult.map((movie) => (
+            <NavLink
+              to={`home/${movie.id}`}
+              style={{ color: "white" }}
+              key={movie.id}
+            >
+              <div className="result-row" onClick={handleSideBar}>
+                <div
+                  className="search-img"
+                  style={{ backgroundImage: `url(${movie.image})` }}
+                ></div>
+                <div className="result-info">
+                  <h3 className="title">
+                    {movie.amharicTitle} | {movie.EnglishTitle}{" "}
+                  </h3>
+                  <div className="rating-duration-genre">
+                    <p className="year">{movie.releaseYear}</p>
+                    <span>&#729;</span>
+                    <p className="duration">{movie.duration}</p>
+                    <span>&#729;</span>
+                    <p className="rating">{movie.rating}</p>
                   </div>
                 </div>
-              </NavLink>
-            ))}
+              </div>
+            </NavLink>
+          ))}
       </div>
       <div className="side-navbar">
         <ul>

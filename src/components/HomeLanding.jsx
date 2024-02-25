@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { debounce } from "lodash";
 
 const HomeLanding = ({ allFilm }) => {
   const [searchInput, setSearchInput] = useState("");
-  const [searchResult, setSearchResult] = useState(allFilm);
-  const handleChange = (e) => {
-    setSearchInput(e.target.value);
-  };
+
+  const searchResult = useMemo(() => {
+    if (searchInput) {
+      return allFilm.filter((item) => {
+        return searchInput.toLowerCase() === ""
+          ? null
+          : item.EnglishTitle.toLowerCase().includes(searchInput);
+      });
+    }
+  }, [allFilm, searchInput]);
+
   return (
     <div className="home-landing">
       <div className="BG">
@@ -17,7 +24,10 @@ const HomeLanding = ({ allFilm }) => {
             <input
               type="text"
               placeholder="Search Movies"
-              onChange={(e) => handleChange(e)}
+              value={searchInput}
+              onChange={(e) => {
+                setSearchInput(e.target.value);
+              }}
             />
             <div className="svg-container">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -28,37 +38,31 @@ const HomeLanding = ({ allFilm }) => {
 
           <div className="search-result-container">
             {searchResult &&
-              searchResult
-                .filter((item) => {
-                  return searchInput.toLowerCase() === ""
-                    ? null
-                    : item.EnglishTitle.toLowerCase().includes(searchInput);
-                })
-                .map((movie) => (
-                  <NavLink
-                    to={`home/${movie.id}`}
-                    style={{ color: "white" }}
-                    key={movie.id}
-                  >
-                    <div className="result-row">
-                      <div
-                        className="search-img"
-                        style={{ backgroundImage: `url(${movie.image})` }}
-                      ></div>
-                      <div className="result-info">
-                        <h3 className="title">{movie.amharicTitle}</h3>
+              searchResult.map((movie) => (
+                <NavLink
+                  to={`home/${movie.id}`}
+                  style={{ color: "white" }}
+                  key={movie.id}
+                >
+                  <div className="result-row">
+                    <div
+                      className="search-img"
+                      style={{ backgroundImage: `url(${movie.image})` }}
+                    ></div>
+                    <div className="result-info">
+                      <h3 className="title">{movie.amharicTitle}</h3>
 
-                        <div className="rating-duration-genre">
-                          <p className="year">{movie.releaseYear}</p>
-                          <span>&#729;</span>
-                          <p className="duration">{movie.duration}</p>
-                          <span>&#729;</span>
-                          <p className="rating">{movie.rating}</p>
-                        </div>
+                      <div className="rating-duration-genre">
+                        <p className="year">{movie.releaseYear}</p>
+                        <span>&#729;</span>
+                        <p className="duration">{movie.duration}</p>
+                        <span>&#729;</span>
+                        <p className="rating">{movie.rating}</p>
                       </div>
                     </div>
-                  </NavLink>
-                ))}
+                  </div>
+                </NavLink>
+              ))}
           </div>
           <Link to="/home">
             <button>
