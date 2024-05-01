@@ -11,7 +11,13 @@ export const MovieSlider = ({ allFilm, setImagesLoaded }) => {
     const orderSlide = filterSlide.sort((a, b) => b.rating - a.rating);
     setSliderMovie(orderSlide);
   }, [allFilm]);
-
+  useEffect(() => {
+    const backgroundImage = new Image();
+    backgroundImage.src = "thumbnails/Manyazewal.jpg";
+    backgroundImage.onload = () => {
+      setImagesLoaded(true);
+    };
+  }, []);
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.

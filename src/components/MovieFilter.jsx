@@ -206,7 +206,7 @@ const MovieFilter = ({ allFilm, setMainMovieList }) => {
         {MainSearchResult &&
           MainSearchResult.map((movie) => (
             <NavLink
-              to={`home/${movie.id}`}
+              to={`/home/${movie.id}`}
               style={{ color: "white" }}
               key={movie.id}
             >
