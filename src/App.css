@@ -248,10 +248,12 @@ body {
   width: 30px;
   fill: var(--PRIMARY-COLOR);
 }
-.home-landing {
-  /* background-image: url("./assets/images/other/header-background.jpg"); */
+.home-page {
+  background-image: url("./assets/images/other/header-background.jpg");
   background-size: cover;
   background-position: top;
+}
+.home-landing {
   border-radius: 35px 35px 0 0;
 }
 .home-landing .top {
