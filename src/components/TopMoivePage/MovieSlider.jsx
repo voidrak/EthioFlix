@@ -45,7 +45,7 @@ export const MovieSlider = ({ allFilm, setImagesLoaded }) => {
   const mappedSlider = sliderMovie.map((movie) => (
     <div
       className="top-movie-card"
-      key={movie.id}
+      key={movie._id}
       style={{
         // backgroundImage: `url(src/assets/images/thumbnails/Slider2.jpg)`,
         backgroundImage: `url(${movie.image})`,

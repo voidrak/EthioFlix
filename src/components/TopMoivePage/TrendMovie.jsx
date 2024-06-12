@@ -12,7 +12,7 @@ const TrendMovie = ({ allFilm }) => {
 
   const mappedTrendMovie = trendMovie.map((movie) => {
     return (
-      <div className="trend-card" key={movie.id}>
+      <div className="trend-card" key={movie._id}>
         <div className="image">
           <img src={movie.image} alt="movie thumbnail" />
         </div>
@@ -29,7 +29,7 @@ const TrendMovie = ({ allFilm }) => {
           </div>
 
           <h1>{movie.amharicTitle}</h1>
-          <Link to={`${movie.id}`}>
+          <Link to={`${movie._id}`}>
             <button>
               <h2>WATCH NOW </h2>
             </button>

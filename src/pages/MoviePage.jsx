@@ -19,11 +19,7 @@ const MoviePage = ({ allFilm, setMainMovieList, mainMovieList }) => {
       {imagesLoaded && (
         <>
           <TopMoviePage allFilm={allFilm} setImagesLoaded={setImagesLoaded} />
-          <MovieFIlter
-            allFilm={allFilm}
-            setMainMovieList={setMainMovieList}
-            mainMovieList={mainMovieList}
-          />
+          <MovieFIlter allFilm={allFilm} setMainMovieList={setMainMovieList} />
           <MainMovieList mainMovieList={mainMovieList} />
         </>
       )}

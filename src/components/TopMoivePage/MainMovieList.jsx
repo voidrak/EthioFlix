@@ -5,7 +5,7 @@ const MainMovieList = ({ mainMovieList }) => {
   const mappedMainMovie = mainMovieList
     .sort((a, b) => b.rating - a.rating)
     .map((movie) => (
-      <div className="main-movie-card" key={movie.id}>
+      <div className="main-movie-card" key={movie._id}>
         <div
           className="thumbnail"
           style={{ backgroundImage: `url(${movie.image})` }}
@@ -27,7 +27,7 @@ const MainMovieList = ({ mainMovieList }) => {
             </div>
           </div>
 
-          <Link to={`${movie.id}`}>
+          <Link to={`${movie._id}`}>
             <button>
               <h2>WATCH NOW </h2>
             </button>

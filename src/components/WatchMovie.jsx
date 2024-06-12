@@ -6,7 +6,7 @@ const WatchMovie = ({ allFilm }) => {
   const { currentMovieId } = useParams();
   useEffect(() => {
     const filteredCurrent = allFilm.filter(
-      (movie) => movie.id == currentMovieId
+      (movie) => movie._id == currentMovieId
     );
     setCurrentMovie(filteredCurrent);
   }, [allFilm]);

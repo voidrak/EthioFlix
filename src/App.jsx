@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -13,9 +13,37 @@ import DmcaPage from "./pages/DmcaPage";
 import PrivacyPage from "./pages/PrivacyPage";
 const App = () => {
   const [sideBar, setSideBar] = useState(false);
-  const [allFilm, setAllFilm] = useState(filmData);
-  const [mainMovieList, setMainMovieList] = useState(allFilm);
+  const [allFilm, setAllFilm] = useState([]);
+  const [mainMovieList, setMainMovieList] = useState([]);
   const [asideSearchInput, SetAsideSearchInput] = useState("");
+
+  useEffect(() => {
+    const fetchMovies = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/api/v1/movies", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        if (!response.ok) {
+          console.log("Network Error");
+        }
+
+        const data = await response.json();
+        const movies = data.movie;
+        setAllFilm(movies);
+        setMainMovieList(movies);
+      } catch (error) {
+        console.error("Error In Fetching Operation", error);
+      }
+    };
+
+    fetchMovies();
+  }, []);
+  useEffect(() => {
+    console.log(allFilm);
+  }, []);
 
   function handleSideBar() {
     setSideBar(!sideBar);

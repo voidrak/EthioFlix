@@ -42,9 +42,9 @@ const SideNav = ({
         {asideSearchResult &&
           asideSearchResult.map((movie) => (
             <NavLink
-              to={`home/${movie.id}`}
+              to={`home/${movie._id}`}
               style={{ color: "white" }}
-              key={movie.id}
+              key={movie._id}
             >
               <div className="result-row" onClick={handleSideBar}>
                 <div
