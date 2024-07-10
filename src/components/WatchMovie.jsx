@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import CommentSection from "./CommentSection/CommentSection";
 
 const WatchMovie = ({ allFilm }) => {
   const [currentMovie, setCurrentMovie] = useState(null);
@@ -49,6 +50,7 @@ const WatchMovie = ({ allFilm }) => {
           </svg>
         </button>
       </div>
+      <CommentSection />
     </div>
   ) : (
     <div>loading</div>
