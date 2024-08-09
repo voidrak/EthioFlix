@@ -5,16 +5,18 @@ import CommentSection from "./CommentSection/CommentSection";
 const WatchMovie = ({ allFilm }) => {
   const [currentMovie, setCurrentMovie] = useState(null);
   const { currentMovieId } = useParams();
+
   useEffect(() => {
     const filteredCurrent = allFilm.filter(
       (movie) => movie._id == currentMovieId
     );
     setCurrentMovie(filteredCurrent);
-  }, [allFilm]);
+    console.log(currentMovie);
+  }, [currentMovieId]);
   return currentMovie ? (
     <div className="current-movie">
       <iframe
-        src={`https://www.youtube.com/embed/${currentMovie[0].src}?start=00`}
+        src={`https://www.youtube.com/embed/${currentMovie[0]?.src}?start=00`}
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import filmData from "../../data/filmData";
 import { Link } from "react-router-dom";
 
 const TrendMovie = ({ allFilm }) => {
   const [trendMovie, setTrendMovie] = useState([]);
 
   useEffect(() => {
-    const filteredTrendMovie = filmData.filter((movie) => movie.trend === true);
+    const filteredTrendMovie = allFilm.filter((movie) => movie.trend === true);
     setTrendMovie(filteredTrendMovie);
   }, [allFilm]);
 
