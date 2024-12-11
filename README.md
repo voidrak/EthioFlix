@@ -2,7 +2,7 @@
 
 <p id="description">EthioFix is a dynamic web application built using React designed to provide a platform for Ethiopian movie enthusiasts. This user-friendly site offers a curated collection of Ethiopian movies allowing users to browse search and watch their favorite films with ease</p>
 
-<a href="https://ethioflixx.vercel.app/">Live Demo</a>
+<a href="https://ethioflixx.vercel.app/home">Live Demo</a>
 
   
   
